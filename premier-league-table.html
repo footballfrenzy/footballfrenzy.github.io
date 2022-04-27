@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html  itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="en-EG">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content="The premier league table" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>premier league table</title>
+    <!--Main Css file-->
+    <link rel="stylesheet" href="css/premier-league-table.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+href="css/all.min.css" />
+
+   <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <div class="container">
+          <a href="index.html" class="logo"> Football Frenzy</a>
+          <ul class="main-nav">
+  
+          <!-- start search -->
+          <li>
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#">Fantasy</a>
+      <a href="#">Store</a>
+      <a href="#">Tickets</a>
+      <a href="#">Books</a>
+      <a href="#">Goals</a>
+      <a href="#">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>  
+  </li>
+  <!-- end search -->
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Live Matches</a></li>
+            <li><a href="#">Favorite Team</a></li>
+            <li>
+              <a href="#">More</a>
+              <!-- Start Megamenu -->
+              <div class="mega-menu">
+                <div class="image">
+                  <img src="images/img.png" alt="logo" />
+                </div>
+                <ul class="links">
+                  <li>
+                    <a href="#"> Matches</a>
+                  </li>
+                  <li>
+                    <a href="#"> News </a>
+                  </li>
+                  <li>
+                    <a href="#">Standings</a>
+                  </li>
+                  <li>
+                    <a href="#">Stats</a>
+                  </li>
+                  <li>
+                      <a href="#">Players</a>
+                  </li>
+                  <li> 
+                      <a href="#"> Special goals</a>
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="#"> Expectations</a>
+                  </li>
+                  <li>
+                    <a href="#">Books</a>
+                  </li>
+                  <li>
+                    <a href="#">Tickets</a>
+                  </li>
+                  <li>
+                    <a href="#">Transfers</a>
+                  </li>
+                  <li>
+                    <a href="#">Store</a>
+                  </li>
+                  <li>
+                      <a href="#">Fantasy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Megamenu -->
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+      
+  
+      <!-- start button up -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!-- end button up -->
+  
+      <!-- start theme -->
+      <div class="theme">
+        <h2>Change Themes</h2>
+      <button onclick="swapStyleSheet('css/dark.css')">Dark</button>
+      <button onclick="swapStyleSheet('css/home.css')">Default</button>
+      </div>
+      <!-- end theme -->
+    <h1>Table</h1>
+    <div class="table">
+    <table id="table">
+        <thead>
+            <nav class="table-row">
+                <tr>
+                    <th class="position">position</th>
+                    <th>Club</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>GD</th>
+                    <th>Pts</th>
+                </tr>
+            </nav>
+        </thead>
+        <tbody>
+            <nav>
+                <tr  id="man-city">
+                    <td class="position">1</td>
+                    <td class="champions-league" class="club"> 
+                         <img class="image" src="images/ManCity.png" 
+                        alt="man-city"> Man City</td>
+                    <td>31</td>
+                    <td>23</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>72</td>
+                    <td>20</td>
+                    <td>52</td>
+                    <td>74</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr class="champions-league" id="liverpool">
+                    <td class="position">2</td>
+                    <td class="champions-league" class="club"> <img src="images/Liverpool.png" alt="liverpool" class="image">
+                        Liverpool</td>
+                    <td>31</td>
+                    <td>22</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>79</td>
+                    <td>22</td>
+                    <td>57</td>
+                    <td>73</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr class="champions-league" id="chelsea">
+                    <td class="position">3</td>
+                    <td class="champions-league" class="club"> <img src="images/Chelsea.png" alt="chelsea" class="image">
+                         Chelsea</td>
+                    <td>30</td>
+                    <td>18</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>64</td>
+                    <td>23</td>
+                    <td>41</td>
+                    <td>62</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr  class="champions-league" id="tottenham">
+                    <td class="position">4</td>
+                    <td class="champions-league" class="club"> <img src="images/Tottenham.png" alt="tottenham" class="image"> 
+                        Tottenham</td>
+                    <td>31</td>
+                    <td>18</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>56</td>
+                    <td>37</td>
+                    <td>19</td>
+                    <td>57</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">5</td>
+                    <td class="club"> <img src="images/Arsenal.png" alt="arsenal" class="image">
+                        Arsenal</td>
+                    <td>30</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>45</td>
+                    <td>36</td>
+                    <td>9</td>
+                    <td>54</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">6</td>
+                    <td class="club"> <img src="images/west-ham.png" alt="west-ham" class="image">
+                        West Ham</td>
+                    <td>32</td>
+                    <td>15</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>51</td>
+                    <td>42</td>
+                    <td>9</td>
+                    <td>51</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">7</td>
+                    <td class="club"> <img src="images/Man-united.png" alt="man-united" class="image">
+                        Man United</td>
+                    <td>31</td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>49</td>
+                    <td>42</td>
+                    <td>7</td>
+                    <td>51</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">8</td>
+                    <td class="club">  <img src="images/wolves.png" alt="wolves" class="image">
+                        Wolwoves</td>
+                    <td>32</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>13</td>
+                    <td>33</td>
+                    <td>28</td>
+                    <td>5</td>
+                    <td>49</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">9</td>
+                    <td class="club">  <img src="images/leicester-city.png" alt="leicester-city" class="image">
+                        Leicester City</td>
+                    <td>29</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>45</td>
+                    <td>48</td>
+                    <td>-3</td>
+                    <td>40</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">10</td>
+                    <td class="club"> <img src="images/crystal-palace.png" alt="crystal-palace" class="image">
+                        Crystal Palace</td>
+                    <td>31</td>
+                    <td>8</td>
+                    <td>13</td>
+                    <td>10</td>
+                    <td>43</td>
+                    <td>40</td>
+                    <td>3</td>
+                    <td>37</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">11</td>
+                    <td class="club">  <img src="images/brighton.png" alt="brighton" class="image">
+                        Brighton</td>
+                    <td>31</td>
+                    <td>8</td>
+                    <td>13</td>
+                    <td>10</td>
+                    <td>28</td>
+                    <td>37</td>
+                    <td>-9</td>
+                    <td>37</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">12</td>
+                    <td class="club"> <img src="images/aston-villa.png" alt="aston-villa" class="image">
+                        Aston Villa</td>
+                    <td>31</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>17</td>
+                    <td>42</td>
+                    <td>46</td>
+                    <td>-4</td>
+                    <td>36</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">13</td>
+                    <td class="club"> <img src="images/brentford.png" alt="brentford" class="image">
+                        Brentford</td>
+                    <td>32</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>16</td>
+                    <td>39</td>
+                    <td>48</td>
+                    <td>-9</td>
+                    <td>36</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">14</td>
+                    <td class="club"> <img src="images/southampton.png" alt="southampton" class="image">
+                        Southampton</td>
+                    <td>31</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>37</td>
+                    <td>52</td>
+                    <td>-15</td>
+                    <td>36</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">15</td>
+                    <td class="club"> <img src="images/newcastle.png" alt="newcastle" class="image">
+                        Newcastle</td>
+                    <td>31</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>13</td>
+                    <td>34</td>
+                    <td>54</td>
+                    <td>-20</td>
+                    <td>34</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">16</td>
+                    <td class="club"> <img src="images/leeds-united.png" alt="leeds-united" class="image">
+                        Leeds United</td>
+                    <td>32</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>15</td>
+                    <td>38</td>
+                    <td>68</td>
+                    <td>-30</td>
+                    <td>33</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">17</td>
+                    <td class="club"> <img src="images/everton.png" alt="everton" class="image">
+                        Everton</td>
+                    <td>30</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>18</td>
+                    <td>33</td>
+                    <td>52</td>
+                    <td>-19</td>
+                    <td>24</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr>
+                    <td class="position">18</td>
+                    <td  class="relegated-clubs" class="club"> <img src="images/burnley.png" alt="burnley" class="image">
+                        Burnley</td>
+                    <td>30</td>
+                    <td>4</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>25</td>
+                    <td>44</td>
+                    <td>-19</td>
+                    <td>24</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr class="relegated-clubs">
+                    <td class="position">19</td>
+                    <td  class="relegated-clubs" class="club"> <img src="images/watford.png" alt="watford" class="image">
+                         Watford</td>
+                    <td>31</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>21</td>
+                    <td>29</td>
+                    <td>60</td>
+                    <td>-31</td>
+                    <td>22</td>
+                </tr>
+            </nav>
+            <nav>
+                <tr class="relegated-clubs">
+                    <td class="position">20</td>
+                    <td  class="relegated-clubs" class="club"> <img src="images/norwich-city.png" alt="norwich-city" class="image">
+                        Norwich City</td>
+                    <td>31</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>63</td>
+                    <td>-43</td>
+                    <td>21</td>
+                </tr>
+            </nav>
+        </tbody>
+    </table>
+</div>
+
+<!-- start footer -->
+
+<div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>Football Frenzy</h3>
+        <ul class="social">
+          <li>
+            <a href="https://facebook.com" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="#">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+<!-- end footer -->
+
+    <!-- java link  -->
+    <script src='js/home.js'></script>
+</body>
+</html>
+
