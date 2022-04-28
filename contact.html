@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Frenzy</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link  id="pagestyle" rel="stylesheet" href="css/contact.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -97,10 +97,22 @@
         </ul>
       </div>
     </div>
+
+
+  <div class="container">
+
+    <!-- start theme -->
+ <div class="theme">
+  <h2>Change Themes</h2>
+<button onclick="swapStyleSheet('css/contact-dark.css')">Dark</button>
+<button onclick="swapStyleSheet('css/contact.css')">Default</button>
+</div>
+<!-- end theme -->
+
     <div class="start">
 Contact Us
-    </div>  
-  <div class="container">
+    </div>   
+
     <form action="action_page.php">
   
       <label for="fname">First Name</label>
@@ -124,5 +136,7 @@ Contact Us
       <input type="submit" value="Submit">
   
     </form>
+    <!-- java link  -->
+  <script src='js/home.js'></script>
   </body>
   </html>

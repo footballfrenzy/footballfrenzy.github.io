@@ -12,7 +12,7 @@
     --section-background: #bebebe;
   }
   html {
-    background-color:#444444;
+    background-color: #444444;
     scroll-behavior: smooth;
   }
   body {
@@ -414,8 +414,6 @@
 .footer {
   background-color: black;
   padding: 20px;
-  /* justify-content: center;
-  align-items: center; */
 
 }
 @media (max-width: 767px) {

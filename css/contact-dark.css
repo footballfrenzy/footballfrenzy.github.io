@@ -5,13 +5,14 @@
   }
   :root {
     --main-color: #3F1052;
-    --main-color-alt: #ff2882;
+    --main-color-alt: #082c6c;
     --main-transition: 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
-    --section-background: #ececec;
+    --section-background: #bebebe;
   }
   html {
+    background-color: #444444;
     scroll-behavior: smooth;
   }
   body {
@@ -52,11 +53,11 @@
   /* End Global Rules */
 /* Start Header */
 .header {
-    background-color: white;
+    background-color: black;
     position: relative;
-    -webkit-box-shadow: 0 0 10px #ddd;
-    -moz-box-shadow: 0 0 10px #ddd;
-    box-shadow: 0 0 10px #ddd;
+    -webkit-box-shadow: 0 0 10px #444444;
+    -moz-box-shadow: 0 0 10px #444444;
+    box-shadow: 0 0 10px #444444;
   }
   .header .container {
     display: flex;
@@ -66,7 +67,7 @@
     position: relative;
   }
   .header .logo {
-    color: var(--main-color);
+    color: white;
     font-size: 26px;
     font-weight: bold;
     height: 72px;
@@ -81,12 +82,11 @@
     }
 }
 /* start search */
-
 .dropbtn {
   margin-top: 20%;
-  background-color: var(--section-background);
+  background-color:var(--main-color);
   border-radius: 20px;
-  color: black;
+  color: white;
   padding: 12px;
   border: none;
   cursor: pointer;
@@ -96,9 +96,8 @@
     margin: auto;
   }
 }
-
 .dropbtn:hover, .dropbtn:focus {
-  background-color: var(--main-color);
+  background-color: black;
   border-radius: 20px;
   color: white;
 }
@@ -117,12 +116,10 @@
 
 #myInput:focus {outline: 2px solid var(--main-color);}
 
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -131,15 +128,13 @@
   border: 1px solid #ddd;
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-content a:hover {background-color: var(--section-background)}
+.dropdown-content a:hover {background-color: #686767}
 
 .show {display:block;}
 /* end search */
@@ -164,7 +159,7 @@
     align-items: center;
     height: 72px;
     position: relative;
-    color: black;
+    color: white;
     padding: 0 30px;
     overflow: hidden;
     font-size: 18px;
@@ -178,9 +173,9 @@
     }
   }
   .header .main-nav > li > a:hover {
-    color: var(--main-color);
-    background-color: #fafafa;
-    border-top: 3px solid var(--main-color);
+    color: black;
+    background-color:#ddd;
+    border-top: 4px solid var(--main-color);
     border-radius: 3px;
   }
   .header .mega-menu {
@@ -188,7 +183,7 @@
     width: 100%;
     left: 0;
     padding: 30px;
-    background-color: white;
+    background-color:#a6a5a4;
     border-bottom: 3px solid var(--main-color);
     z-index: -1;
     display: flex;
@@ -222,15 +217,15 @@
     position: relative;
   }
   .header .mega-menu .links li:not(:last-child) {
-    border-bottom: 1px solid #e9e6e6;
+    border-bottom: 1px solid #3F1052 ;
   }
   @media (max-width: 767px) {
     .header .mega-menu .links:first-of-type li:last-child {
-      border-bottom: 1px solid #e9e6e6;
+      border-bottom: 2px solid #3F1052;
     }
   }
   .header .mega-menu .links li:hover {
-    background-color: var(--section-background);
+    background-color: #bebebe;
     border-radius: 6px;
   }
   .header .mega-menu .links li a {
@@ -246,11 +241,11 @@
   /* End Header */
 
 .start {
-  color: var(--main-color);
+  color: black;
   font-size: x-large;
   text-align: center;
   margin-top: 20px;
-  border-top: solid 2px var(--main-color);
+  border-bottom: solid 2px black;
   border-radius: 20px;
 }
 /* start themes */
@@ -265,7 +260,7 @@
   padding: 7px;
   cursor: pointer;
   background-color: var(--main-color);
-  color: white;
+  color: black;
 }
 /* end themes */
 
@@ -274,24 +269,27 @@ form {
 }
 
 input[type=text], select, textarea {
-    width: 100%; 
+    color: black;
+    background-color: var(--main-color);
+    width: 100%;
     padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px;
+    border: 1px solid black; 
+    border-radius: 4px; 
     box-sizing: border-box; 
     margin-bottom: 16px;
-    resize: vertical 
+    resize: vertical;
   }
   
+
   input[type=submit] {
     background-color: var(--main-color);
-    color: white;
+    color:black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   input[type=submit]:hover {
     background-color: var(--main-color);
   }
