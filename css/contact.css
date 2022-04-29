@@ -81,12 +81,11 @@
     }
 }
 /* start search */
-
 .dropbtn {
   margin-top: 20%;
-  background-color: var(--section-background);
+  background-color:var(--main-color);
   border-radius: 20px;
-  color: black;
+  color: white;
   padding: 12px;
   border: none;
   cursor: pointer;
@@ -96,11 +95,10 @@
     margin: auto;
   }
 }
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: var(--main-color);
+.dropbtn:hover {
+  background-color: #ddd;
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 
 /* The search field */
@@ -113,33 +111,33 @@
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  border-radius: 15px;
 }
 
-#myInput:focus {outline: 2px solid var(--main-color);}
-
+#myInput:focus {outline: 1px solid #ddd;}
 
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f6f6f6;
   min-width: 230px;
-  border: 1px solid #ddd;
+  border: 1px solid white;
+  border-radius: 15px;
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-content a:hover {background-color: var(--section-background)}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 10px;}
 
 .show {display:block;}
 /* end search */

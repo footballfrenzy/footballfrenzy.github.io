@@ -5,14 +5,14 @@
   }
   :root {
     --main-color: #3F1052;
-    --main-color-alt: #082c6c;
+    --main-color-alt: rgb(1, 0, 28);
     --main-transition: 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #bebebe;
   }
   html {
-    background-color: #444444;
+    background-color: black;
     scroll-behavior: smooth;
   }
   body {
@@ -53,11 +53,11 @@
   /* End Global Rules */
 /* Start Header */
 .header {
-    background-color: #444444;
+    background-color: black ;
     position: relative;
-    -webkit-box-shadow: 0 0 10px #444444;
-    -moz-box-shadow: 0 0 10px #444444;
-    box-shadow: 0 0 10px #444444;
+    -webkit-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
   }
   .header .container {
     display: flex;
@@ -96,10 +96,10 @@
     margin: auto;
   }
 }
-.dropbtn:hover, .dropbtn:focus {
-  background-color: black;
+.dropbtn:hover {
+  background-color: #ddd;
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 
 /* The search field */
@@ -112,9 +112,10 @@
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  border-radius: 15px;
 }
 
-#myInput:focus {outline: 2px solid var(--main-color);}
+#myInput:focus {outline: 1px solid #ddd;}
 
 .dropdown {
   position: relative;
@@ -125,7 +126,8 @@
   position: absolute;
   background-color: #f6f6f6;
   min-width: 230px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--main-color);
+  border-radius: 15px;
   z-index: 1;
 }
 .dropdown-content a {
@@ -134,7 +136,9 @@
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #686767}
+.dropdown-content a:hover {
+  background-color: #686767;
+  border-radius: 10px;}
 
 .show {display:block;}
 /* end search */
@@ -183,7 +187,7 @@
     width: 100%;
     left: 0;
     padding: 30px;
-    background-color:#a6a5a4;
+    background-color:var(--section-background);
     border-bottom: 3px solid var(--main-color);
     z-index: -1;
     display: flex;
@@ -225,7 +229,7 @@
     }
   }
   .header .mega-menu .links li:hover {
-    background-color: #bebebe;
+    background-color: #ddd;
     border-radius: 6px;
   }
   .header .mega-menu .links li a {
@@ -250,7 +254,7 @@
     top: -35px;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(1, 0, 28);
     z-index: -1;
     transform: skewY(-6deg);
     transform-origin: top left;
@@ -350,9 +354,10 @@
   gap: 40px;
 }
 .articles .box {
-  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-  background-color: #a6a5a4;
+  box-shadow: 0 2px 15px rgb(4, 3, 54);
+  background-color: rgb(1, 0, 28);
   border-radius: 6px;
+  color: var(--main-color);
   overflow: hidden;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
@@ -412,7 +417,7 @@
 
 /* Start Footer */
 .footer {
-  background-color: black;
+  background-color: rgb(1, 0, 28);
   padding: 20px;
 
 }

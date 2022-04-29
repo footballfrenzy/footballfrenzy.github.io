@@ -5,14 +5,14 @@
   }
   :root {
     --main-color: #3F1052;
-    --main-color-alt: #082c6c;
+    --main-color-alt: rgb(1, 0, 28);
     --main-transition: 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #bebebe;
   }
   html {
-    background-color: #444444;
+    background-color: var(--main-color-alt);
     scroll-behavior: smooth;
   }
   body {
@@ -55,9 +55,9 @@
 .header {
     background-color: black;
     position: relative;
-    -webkit-box-shadow: 0 0 10px #444444;
-    -moz-box-shadow: 0 0 10px #444444;
-    box-shadow: 0 0 10px #444444;
+    -webkit-box-shadow: 0 0 10px var(--main-color-alt) ;
+    -moz-box-shadow: 0 0 10px var(--main-color-alt);
+    box-shadow: 0 0 10px var(--main-color-alt);
   }
   .header .container {
     display: flex;
@@ -96,10 +96,10 @@
     margin: auto;
   }
 }
-.dropbtn:hover, .dropbtn:focus {
-  background-color: black;
+.dropbtn:hover {
+  background-color: #ddd;
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 
 /* The search field */
@@ -109,12 +109,14 @@
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
+  background-color: white;
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  border-radius: 15px;
 }
 
-#myInput:focus {outline: 2px solid var(--main-color);}
+#myInput:focus {outline: 1px solid #ddd;}
 
 .dropdown {
   position: relative;
@@ -125,7 +127,8 @@
   position: absolute;
   background-color: #f6f6f6;
   min-width: 230px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--main-color);
+  border-radius: 15px;
   z-index: 1;
 }
 .dropdown-content a {
@@ -134,7 +137,9 @@
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #686767}
+.dropdown-content a:hover {
+  background-color: #686767;
+  border-radius: 10px;}
 
 .show {display:block;}
 /* end search */
@@ -241,16 +246,17 @@
   /* End Header */
 
 .start {
-  color: black;
+  color: white;
   font-size: x-large;
   text-align: center;
   margin-top: 20px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px var(--main-color);
   border-radius: 20px;
 }
 /* start themes */
 .theme {
   text-align: center;
+  color: #ddd;
 }
 .theme button {
   text-decoration: none;
@@ -266,14 +272,15 @@
 
 form {
     margin-top: 30px;
+    color: #ddd;
 }
 
 input[type=text], select, textarea {
-    color: black;
+    color: #ddd;
     background-color: var(--main-color);
     width: 100%;
     padding: 12px; 
-    border: 1px solid black; 
+    border: 2px solid black; 
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-bottom: 16px;
@@ -283,7 +290,7 @@ input[type=text], select, textarea {
 
   input[type=submit] {
     background-color: var(--main-color);
-    color:black;
+    color: #ddd;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -291,5 +298,5 @@ input[type=text], select, textarea {
   }
 
   input[type=submit]:hover {
-    background-color: var(--main-color);
+    background-color: black;
   }
