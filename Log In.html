@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <link rel="stylesheet" href="css/LogIN.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">  
+          <div class="container">          
+              <a href="index.html" class="logo"> Football Frenzy</a>
+              <ul class="main-nav">
+                <li>
+                    <div class="dropdown">
+                     <button onclick="myFunction()" class="dropbtn">Search</button>
+                     <div id="myDropdown" class="dropdown-content">
+                       <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                       <a href="#">Fantasy</a>
+                       <a href="#">Store</a>
+                       <a href="#">Tickets</a>
+                       <a href="#">Books</a>
+                       <a href="#">Goals</a>
+                       <a href="#">Feedback</a>
+                       <a href="contact.html">Contact</a>
+                     </div>
+                   </div>  
+                   </li>
+                   <li><a href="#">Account</a></li>
+                   <li><a href="#">Live Matches</a></li>
+                   <li><a href="#">Favorite Team</a></li>
+                   <li>
+                     <a href="#">More</a>
+                     <div class="mega-menu">
+                        <div class="image">
+                          <img src="img.png" alt="logo" />
+                        </div>
+                        <ul class="links">
+                          <li>
+                            <a href="#"> Matches</a>
+                          </li>
+                          <li>
+                            <a href="#"> News </a>
+                          </li>
+                          <li>
+                            <a href="#">Standings</a>
+                          </li>
+                          <li>
+                            <a href="#">Stats</a>
+                          </li>
+                          <li>
+                              <a href="#">Players</a>
+                          </li>
+                          <li> 
+                              <a href="#"> Special goals</a>
+                          </li>
+                        </ul>
+                        <ul class="links">
+                          <li>
+                            <a href="#"> Expectations</a>
+                          </li>
+                          <li>
+                            <a href="#">Books</a>
+                          </li>
+                          <li>
+                            <a href="#">Tickets</a>
+                          </li>
+                          <li>
+                            <a href="#">Transfers</a>
+                          </li>
+                          <li>
+                            <a href="#">Store</a>
+                          </li>
+                          <li>
+                              <a href="#">Fantasy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+     <div class="sokr">
+        <div class="from-box">
+            <div class="butoon-box">
+              <div id="btn2"></div>
+                     <button type="button" class="btn" onclick="login()">Log In </button>
+                     <button type="button" class="btn" onclick="signup()">Sign Up </button>
+            </div>
+           <form id="login" class="input-group">
+                    <input type="email" class="input-field" placeholder="Enter Email" required>
+             <div>
+                     <input type="password" class="input-field" placeholder="Enter Password" required id="my input">
+                     <span class="eye" onclick=" fun()">
+                     <i id="hide1" class="fa fa-eye" ></i>
+                     <i id="hide2" class="fa fa-eye-slash" ></i>
+                     </span>
+             </div>
+                   <input type="checkbox" class="check-box"><span>Remember Password</span>
+                   <button type="submit" class="submit-button">Log In</button>
+           </form>
+           <form id="signup" class="input-group">
+                   <input type="text" class="input-field" placeholder="Enter Full Name" required>
+                   <input type="email" class="input-field" placeholder="Enter Email" required>
+                   <input type="text" class="input-field" placeholder="Enter Password" required>
+                   <input type="text" class="input-field" placeholder="Enter Phone Number">
+                   <input type="checkbox" class="check-box"required><span>I agree to the terms & condition</span>
+                   <button type="submit" class="submit-button">Sign Up</button>
+           </form>
+            <div id="ic">
+                   <p class="logwith"><b>Log in with</b></p>
+               <div class="icon">
+                      <a href="https://www.facebook.com/" target="blank" class="fa fa-facebook"></a>
+                      <a href="https://www.twitter.com/" target="blank"  class="fa fa-twitter"></a>
+                      <a href="https://accounts.google.com/signin/v2/identifier?hl=ar&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"  class="fa fa-google"></a>
+                      <a href="https://www.instagram.com/" target="blank"  class="fa fa-instagram"></a>
+               </div>
+           </div>
+       </div>
+     </div>
+          <script>
+                 var x = document.getElementById("login");
+                 var y = document.getElementById("signup");
+                 var z = document.getElementById("btn2");
+              function signup() {
+                  x.style.left = "-400px";
+                  y.style.left = "50px";
+                  z.style.left = "110px";
+              }
+              function login() {
+                  x.style.left = "50px";
+                  y.style.left = "450px";
+                  z.style.left = "0";
+              }
+
+
+          </script>
+          <script>
+              function fun(){
+                    var x =document.getElementById("my input");
+                    var y =document.getElementById("hide1");
+                    var z =document.getElementById("hide2");
+                if(x.type==="password"){
+                  x.type = "text";
+                  y.style.display = "block";
+                  z.style.display = "none";
+                }
+                else{
+                  x.type = "password";
+                  y.style.display = "block";
+                  z.style.display = "none";
+                }
+              }
+          </script>
+          <script>
+              function myFunction() {
+                   document.getElementById("myDropdown").classList.toggle("show");}
+              function filterFunction() {
+                       var input, filter, ul, li, a, i;
+                       input = document.getElementById("myInput");
+                       filter = input.value.toUpperCase();
+                       div = document.getElementById("myDropdown");
+                       a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                   txtValue = a[i].textContent || a[i].innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                   a[i].style.display = "";
+                  } 
+                   else {
+                   a[i].style.display = "none"; 
+                  }
+                }
+              }
+         </script>
+    </body>
+</html>
