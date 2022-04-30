@@ -1,0 +1,135 @@
+ body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    color: #3F1052;
+    background-color: #ececec;
+}
+
+main {
+    height: 2500px;
+}
+
+header {
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 2px;
+    position: static;
+}
+
+figure {
+    background-color: #fafafa;
+    width: 720px;
+    height: 200px;
+}
+
+figure span img {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    display: inline;
+    border-right: 10px solid rgb(111, 72, 241);
+}
+
+figcaption span h3 {
+    position: relative;
+    margin: 10px 0 0 10px;
+    position: relative;
+    left: 360px;
+    bottom: 200px;
+    width: 350px;
+    padding: 0;
+}
+
+figcaption span a {
+    position: relative;
+    left: 365px;
+    bottom: 190px;
+    margin: 10px 0 0 10px ;
+    text-decoration: none;
+    color: #E94747;
+    width: 350px;
+    padding: 0;
+}
+
+figcaption span p {
+    position: relative;
+    left: 365px;
+    bottom: 180px;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    width: 350px;
+}
+
+.text-container-one,
+.text-container-two,
+.text-container-three, 
+.text-container-four, 
+.text-container-five, 
+.text-container-six, 
+.text-container-seven, 
+.text-container-eight, 
+.text-container-nine, 
+.text-container-ten, 
+.text-container-eleven {
+    display: inline-block;
+    position: relative;
+    left: 767px;
+    width: 300px;
+    bottom: 208px;
+    background: #74606030;
+    height: 185px;
+    margin-left: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.section-container-two{
+    position: relative;
+    bottom: 204px;
+    margin-top: 10px;
+}
+.section-container-three{
+    position: relative;
+    margin-top: 10px;
+    bottom: 407px;
+}
+.section-container-four {
+    position: relative;
+    margin-top: 10px;
+    bottom: 611px;
+}
+.section-container-five {
+    position: relative;
+    margin-top: 10px;
+    bottom: 815px;
+}
+.section-container-six {
+    position: relative;
+    margin-top: 10px;
+    bottom: 1017px;
+}
+.section-container-seven {
+    position: relative;
+    margin-top: 10px;
+    bottom: 1222px;
+}
+.section-container-eight {
+    position: relative;
+    margin-top: 10px;
+    bottom: 1429px;
+}
+.section-container-nine {
+    position: relative;
+    margin-top: 10px;
+    bottom: 1635px;
+}
+.section-container-ten {
+    position: relative;
+    margin-top: 10px;
+    bottom: 1838px;
+}
+.section-container-eleven {
+    position: relative;
+    margin-top: 10px;
+    bottom: 2043px;
+}
