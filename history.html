@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League History</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link  id="pagestyle" rel="stylesheet" href="css/history.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- java link  -->
+    <script src='js/home.js'></script>
+</head>
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <a href="index.html" class="logo"> Football Frenzy</a>
+        <ul class="main-nav">
+
+        <!-- start search -->
+        <li>
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="fantasy">Fantasy</a>
+    <a href="store.html">Store</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="book.html">Books</a>
+    <a href="goals.html">Goals</a>
+    <a href="about.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</div>  
+</li>
+<!-- end search -->
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Live Matches</a></li>
+          <li><a href="#">Favorite Team</a></li>
+          <li>
+            <a href="#">More</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="images/img.png" alt="logo" />
+              </div>
+              <ul class="links">
+                <li>
+                  <a href="matches.html"> Matches</a>
+                </li>
+                <li>
+                  <a href="coaches.html"> Coaches </a>
+                </li>
+                <li>
+                  <a href="standings.html">Standings</a>
+                </li>
+                <li>
+                  <a href="stats.html">Stats</a>
+                </li>
+                <li>
+                    <a href="players.html">Players</a>
+                </li>
+                <li> 
+                    <a href="goals.html"> Special goals</a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="expectations.html"> Expectations</a>
+                </li>
+                <li>
+                  <a href="books.html">Books</a>
+                </li>
+                <li>
+                  <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                  <a href="transfers.html">Transfers</a>
+                </li>
+                <li>
+                  <a href="store.html">Store</a>
+                </li>
+                <li>
+                    <a href="fantasy.html">Fantasy</a>
+                </li>
+              </ul>
+              </ul>
+            </div>
+            <!-- End Megamenu -->
+          </li>
+        </ul>
+      </div>
+    </div>
+<!-- end header -->
+   
+        <!-- start theme -->
+        <div class="container">
+          <div class="start">
+            Historical Info
+           </div>   
+ <div class="theme">
+<button onclick="swapStyleSheet('css/history-dark.css')">Dark</button>
+<button onclick="swapStyleSheet('css/history.css')">Default</button>
+</div>
+</div>
+<!-- end theme -->
+
+<!-- start history -->
+<div class="container">
+ 
+  <h3>Premier League Winning Clubs by Seasons 2001-02 to 2021-22</h3>
+    <div class="table">
+    <table id="table">
+        <thead>
+                <tr>
+                    <th class="position">Season</th>
+                    <th>Winner</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Drawn</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td class="position">2001/2002</td>
+                    <td>Arsenal</td>
+                    <td>38</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td class="position">2002/2003</td>
+                    <td>Manchester United</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td class="position">2003/2004</td>
+                    <td>Arsenal</td>
+                    <td>38</td>
+                    <td>26</td>
+                    <td>12</td>
+                    <td class="cp">0</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td class="position">2004/2005</td>
+                    <td>Chelsea</td>
+                    <td>38</td>
+                    <td>29</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td class="position">2005/2006</td>
+                    <td>Chelsea</td>
+                    <td>38</td>
+                    <td>29</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td class="position">2006/2007</td>
+                    <td>Manchester United</td>
+                    <td>38</td>
+                    <td>29</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="position">2007/2008</td>
+                    <td>Manchester United</td>
+                    <td>38</td>
+                    <td>27</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td class="position">2008/2009</td>
+                    <td>Manchester United</td>
+                    <td>38</td>
+                    <td>28</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td class="position">2009/2010</td>
+                    <td>Chelsea</td>
+                    <td>38</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td class="position">2010/2011</td>
+                    <td>Manchester United </td>
+                    <td>38</td>
+                    <td>23</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td class="position">2011/2012</td>
+                    <td>Manchester City</td>
+                    <td>38</td>
+                    <td>28</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="position">2012/2013</td>
+                    <td>Manchester United</td>
+                    <td>38</td>
+                    <td>28</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="position">2013/2014</td>
+                    <td>Manchester City</td>
+                    <td>38</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td class="position">2014/2015</td>
+                    <td>Chelsea</td>
+                    <td>38</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td class="position">2015/2016</td>
+                    <td>Leicester City</td>
+                    <td>38</td>
+                    <td>23</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td class="position">2016/2017</td>
+                    <td>Chelsea</td>
+                    <td>38</td>
+                    <td>30</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td class="position">2017/2018</td>
+                    <td>Manchester City</td>
+                    <td>38</td>
+                    <td>32</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td class="sp">100</td>
+                </tr>
+                <tr>
+                    <td class="position">2018/2019</td>
+                    <td>Manchester City</td>
+                    <td>38</td>
+                    <td>32</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>98</td>
+                </tr>
+                <tr class="relegated-clubs">
+                    <td class="position">2019/2020</td>
+                    <td>Liverpool</td>
+                    <td>38</td>
+                    <td>32</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td class="position">2020/2021</td>
+                    <td>Manchester City</td>
+                    <td>38</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>86</td>
+                </tr>
+    </table>
+</div>
+<hr>
+<h3>Premier League Winners Number of Titles</h3>
+<div class="table">
+<table id="table">
+    <thead>
+            <tr>
+                <th class="position">Wins</th>
+                <th>Club</th>
+                <th></th>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td class="position">6 times</td>
+                <td >Manchester United </td>
+                <td class="xp">1st</td>
+            </tr>
+            <tr>
+              <td class="position">5 times</td>
+              <td>Chelsea</td>
+              <td>2nd</td>
+          </tr>   
+          <tr>
+            <td class="position">5 times</td>
+            <td>Manchester City</td>
+            <td>2nd</td>
+        </tr>   
+        <tr>
+          <td class="position">2 times</td>
+          <td>Arsenal</td>
+          <td>3rd</td>
+      </tr> 
+      <tr>
+        <td class="position">1 time</td>
+        <td>Liverpool</td>
+        <td>4th</td>
+      </tr>
+      <tr>
+        <td class="position">1 time</td>
+        <td>Leicester City</td>
+        <td>4th</td>
+      </tr>
+    </table>
+  </div>
+</div>
+  <!-- end history -->
+<div><p></p></div>
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Football Frenzy</h3>
+          <ul class="social">
+            <li>
+              <a href="https://facebook.com" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="links">
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+      </div>
+    </div>
+<!-- end footer -->
+
+
+    <!-- java link  -->
+  <script src='js/home.js'></script>
+  </body>
+  </html>

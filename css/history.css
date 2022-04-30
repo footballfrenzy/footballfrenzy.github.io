@@ -13,6 +13,7 @@
   }
   html {
     scroll-behavior: smooth;
+    background-color: white;
   }
   body {
     font-family: 'Work Sans', sans-serif;
@@ -242,104 +243,22 @@
     margin-right: 10px;
   }
   /* End Header */
-  /* Start Landing */
-  .landing {
-    position: relative;
-  }
-  .landing::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -5px;
-    width: 100%;
-    height: 100%;
-    background-color: #ececec;
-    z-index: -1;
-    transform: skewY(-5deg);
-    transform-origin: top left;
-  }
-  .landing .container {
-    min-height: calc(100vh - 72px);
-    display: flex;
-    align-items: center;
-    padding-bottom: 120px;
-  }
-  .landing .text {
-    flex: 1;
-  }
-  @media (max-width: 991px) {
-    .landing .text {
-      text-align: center;
-    }
-  }
-  .landing .text h1 {
-    font-size: 40px;
-    margin: 0;
-    letter-spacing: -2px;
-  }
-  @media (max-width: 767px) {
-    .landing .text h1 {
-      font-size: 28px;
-    }
-  }
-  .landing .text p {
-    font-size: 23px;
-    line-height: 1.7;
-    margin: 5px 0 0;
-    color: #666;
-    max-width: 500px;
-  }
-  @media (max-width: 991px) {
-    .landing .text p {
-      margin: 10px auto;
-    }
-  }
-  @media (max-width: 767px) {
-    .landing .text p {
-      font-size: 18px;
-    }
-  }
-  .landing .image img {
-    position: relative;
-    width: 600px;
-    animation: up-and-down 5s linear infinite;
-  }
-  @media (max-width: 991px) {
-    .landing .image {
-      display: none;
-    }
-  }
-  /* End Landing */
 
-  /* start button up */
-  #myBtn {
-  
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 100; 
-    border: none;
-    outline: none;
-    background-color: var(--main-color);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 18px;
-  }
-  
-  #myBtn:hover {
-    background-color: var(--section-background);
-    color: black;
-  }
-  /* end button up */
-
+.start {
+  color: var(--main-color);
+  font-size: x-large;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  border-bottom: solid 2px var(--main-color);
+  border-radius: 20px;
+}
 /* start themes */
 .theme {
-  text-align: center;
-
-}
-.theme button {
+  text-align: right;
+  padding-top: 5px;
+  }
+  .theme button {
   text-decoration: none;
   border: none;
   border-radius: 19px;
@@ -348,69 +267,53 @@
   cursor: pointer;
   background-color: var(--main-color);
   color: white;
-}
-/* end themes */
-
-/* Start Articles */
-.articles {
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
-  position: relative;
-}
-.articles .main-title {
-  padding-left: 10px;
-}
-.articles .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 40px;
-}
-.articles .box {
-  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-  background-color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  transition: transform var(--main-transition), box-shadow var(--main-transition);
-}
-.articles .box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-}
-.articles .box img {
-  width: 100%;
-  max-width: 100%;
-}
-.articles .box .content {
-  padding: 20px;
-}
-.articles .box .content h3 {
-  margin: 0;
+  }
+  /* end themes */
+/* start history */
+table {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #fafafa;
+  display: inline-block;
+  margin: 0% 10% 0% 10%;
+  text-align: center;
 }
 
-.articles .box .content p {
-  margin: 10px 0 0;
-  line-height: 1.5;
-  color: #777;
+th, td {
+  border-bottom: 1px solid #ddd; 
+  color: #3F1052;
+
 }
 
-.articles .info {
-  padding: 20px;
-  border-top: 1px solid #e6e6e7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+tr:hover {
+  background-color: #ddd;
 }
-.articles .info a {
-  color: var(--main-color);
-  font-weight: bold;
+
+th {
+  background-color: #ececec;
 }
-.articles .info i {
-  color: var(--main-color);
+
+tr  {
+  color: white;
+  padding: 5px;
 }
-.articles :hover .info i {
-  animation: moving-arrow 0.6s linear infinite;
+
+.position {
+  width: 5%;
+  height: auto;
 }
-/* End Articles */
+.cp {
+  background-color: #ff2882;
+}
+.sp {
+  background-color: rgba(33, 162, 237, 0.855);
+}
+.xp {
+  background-color: gold;
+}
+/* end history */
 
 /* Start Footer */
 .footer {
