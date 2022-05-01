@@ -1,0 +1,118 @@
+h1{color:white;font-family:sans-serif;}
+h2{font-family:sans-serif;}
+.container{
+    width:100%;
+    height: 120px;
+}
+.arsenal{
+    background-color:#f00000;
+}
+.liverpool{
+    background-color:#dc0714;
+}
+.man-united{
+    background-color:#d81920;
+}
+.chelsea{
+    background-color:#001489;
+}
+.man-city{
+    background-color:#6caee0;
+}
+.tottenham{ 
+    background-color:#e1d961;
+}
+.aston-villa{
+    background-color:#7D1142;
+}
+.brentford{
+    background-color:#C61D23;
+}
+.brighton{
+    background-color:#0054A6;
+}
+.burnley{
+    background-color:#81204C;
+}
+.crystal-palace{
+    background-color:#EB302E;
+}
+.everton{
+    background-color:#00369c;
+}
+.leeds-united{
+    background-color:#FDCB00;
+}
+.leicester-city{
+    background-color:#273E8A;
+}
+.newcastle{
+    background-color:#383838;
+}
+.norwich-city{
+    background-color:#00A94F;
+}
+.southampton{
+    background-color:#D71920;
+}
+.watford{
+    background-color:#FFEE00;
+}
+.westham{
+    background-color:#7D2C3B;
+}
+.wolverhampton{
+    background-color:#F9A01B;
+}
+.box{
+    display:flex;
+    width:100%;
+    height:120px;
+    justify-content:center;
+    align-items:center;
+}
+.pic{
+    position:relative;
+    top:20px;
+    width:120px;
+}
+.semiblack{
+    background-color:#172030;
+}
+.position{
+    font-family:sans-serif;
+}
+.container1{
+    display:grid;
+    /*gap:5px;*/
+    grid-template-columns:auto auto auto;
+    justify-content: space-evenly;
+}
+.plname{
+    padding: 5px;
+    font-size:28px;
+    text-align:center;
+    font-family:sans-serif;
+    /*color:#3F1052;*/
+}
+.image{
+    width:350px;
+    height:230px;
+}
+.image1{
+    width:250px;
+    height:250px;
+}
+.container2{
+    display:flex;
+    flex-direction: row;
+    /*border: 2px solid yellow;*/
+    justify-content:space-evenly;
+}
+.address{
+    color:#76766f;;
+}
+.zoom:hover{
+    transform:scale(1.1);
+    transition:all 0.05s;
+}
