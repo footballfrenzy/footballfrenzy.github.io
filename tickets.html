@@ -1,0 +1,228 @@
+<html>
+<head>
+    <title>Football Frenzy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Frenzy</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link  id="pagestyle" rel="stylesheet" href="css/about.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- java link  -->
+    <script src='js/home.js'></script>
+</head>
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <a href="index.html" class="logo"> Football Frenzy</a>
+        <ul class="main-nav">
+
+        <!-- start search -->
+   <li>
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="fantasy">Fantasy</a>
+    <a href="store.html">Store</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="book.html">Books</a>
+    <a href="history.html">New Items</a>
+    <a href="goals.html">Goals</a>
+    <a href="about.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</div>  
+</li>
+<!-- end search -->
+                  <li><a href="login.htm">Login</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="fav.html">Favorite Team</a></li>
+          <li>
+            <a href="#">More</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="images/img.png" alt="logo" />
+              </div>
+              <ul class="links">
+                <li>
+                  <a href="matches.html"> Matches</a>
+                </li>
+                <li>
+                  <a href="coaches.html"> Coaches </a>
+                </li>
+                <li>
+                  <a href="standings.html">Standings</a>
+                </li>
+                <li>
+                  <a href="stats.html">Stats</a>
+                </li>
+                <li>
+                    <a href="players.html">Players</a>
+                </li>
+                <li> 
+                    <a href="goals.html"> Special goals</a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="expectations.html"> Expectations</a>
+                </li>
+                <li>
+                  <a href="books.html">Books</a>
+                </li>
+                <li>
+                  <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                  <a href="transfers.html">Transfers</a>
+                </li>
+                <li>
+                  <a href="store.html">Store</a>
+                </li>
+                <li>
+                    <a href="fantasy.html">Fantasy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Megamenu -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+      
+    <h1>tickets_booking</h1>
+    <br />
+    <form>
+        <div>
+            <label><b> Select Match</b></label>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <label><b>first name</b></label>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <label><b>middle name</b></label>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <label><b>last name</b></label>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <lable><b>gender</b></lable>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <label><b>age</b></label>
+            <input required />
+        </div>
+        <br />
+        <div>
+            <label><b>phone number</b></label>
+            <input required minlength="11" maxlength="20" />
+        </div>
+        <br />
+        <div>
+            <label><b>national ID</b></label>
+            <input required minlength="14" maxlength="14" />
+        </div>
+        <br />
+        <div>
+            <label><b>e-mail</b></label>
+            <input type="email" required />
+        </div>
+        <br />
+        <input type="submit">
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Congratulations</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    The operation was completed successfully
+                    <br />
+                    Please go to our store to take your ticket
+                    <br />
+                    Thank you
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // (function () {
+        const form = document.querySelector('form');
+        const modalElement = document.querySelector('#exampleModal');
+        const modal = new bootstrap.Modal(modalElement);
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // console.log('modal');
+            modal.show();
+        });
+        // })()
+    </script>
+<div><p></p></div>
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Football Frenzy</h3>
+          <ul class="social">
+            <li>
+              <a href="https://facebook.com" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="links">
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+      </div>
+    </div>
+<!-- end footer -->
+  </body>
+  </html>
