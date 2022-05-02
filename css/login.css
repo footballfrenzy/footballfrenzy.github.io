@@ -279,7 +279,7 @@
     top: 0;
     left: 0;
     position: absolute;
-    height: 80%;
+    height: 85%;
     width: 120px;
     background: linear-gradient(to right, #b03eea,#7a44b0);
     border-radius: 35px;
@@ -353,12 +353,12 @@ top: 3pc;
 .fa {
   padding: 10px;
   font-size: 30px;
-  width: 25px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  right: 5px;
+  right: 9px;
 }
 .fa-instagram {
   background: linear-gradient(to right, #392c80,#933b90);
@@ -366,7 +366,7 @@ top: 3pc;
 }
 .icon{
   margin-top: 10px;
-  margin-left: 80px;
+  margin-left: 90px;
   
 }
 .logwith{
