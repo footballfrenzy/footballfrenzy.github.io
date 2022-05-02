@@ -1,0 +1,26 @@
+.image{ 
+    position: relative; 
+ }
+ 
+.title{ 
+    position: absolute; 
+    top: 130px;
+    left:120px;
+    width: 40%;
+    font-size:2cm;
+    color:white;
+ }
+ .container{
+    display:grid;
+    width:100%;
+    grid-template-areas:
+    "top"
+    "top";
+    margin:100px;
+    grid-gap:15px;
+    justify-content:center;
+}
+.words{
+    margin:2.5cm 10cm 10px 10cm;
+    font-size:25px;
+}
