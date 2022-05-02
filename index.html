@@ -4,364 +4,225 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Football Frenzy</title>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Books</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link id="pagestyle" rel="stylesheet" type="text/css" href="css/home.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- Google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="js/js.js">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
   <body>
-    <!-- Start Header -->
     <div class="header">
       <div class="container">
         <a href="index.html" class="logo"> Football Frenzy</a>
         <ul class="main-nav">
-
-        <!-- start search -->
         <li>
  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Search</button>
   <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="fantasy">Fantasy</a>
-    <a href="store.html">Store</a>
-    <a href="tickets.html">Tickets</a>
-    <a href="book.html">Books</a>
-    <a href="history.html">New Items</a>
-    <a href="goals.html">Goals</a>
-    <a href="about.html">About Us</a>
-    <a href="feedback.html">Feedback</a>
+    <input type="search" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#">Fantasy</a>
+    <a href="#">Store</a>
+    <a href="#">Tickets</a>
+    <a href="#">Books</a>
+    <a href="#">Goals</a>
+    <a href="#">Feedback</a>
+    <a href="contact.html">Contact</a>
   </div>
 </div>  
 </li>
-<!-- end search -->
-          <li><a href="login.html">Login</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="fav.html">Favorite Team</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Live Matches</a></li>
+          <li><a href="#">Favorite Team</a></li>
           <li>
             <a href="#">More</a>
-            <!-- Start Megamenu -->
             <div class="mega-menu">
-              <div class="image">
-                <img src="images/img.png" alt="logo" />
+                <div class="image">
+                  <img src="images/img.png" alt="logo" />
+                </div>
+                <ul class="links">
+                  <li>
+                    <a href="#"> Matches</a>
+                  </li>
+                  <li>
+                    <a href="#"> News </a>
+                  </li>
+                  <li>
+                    <a href="premier-league-table.html">Standings</a>
+                  </li>
+                  <li>
+                    <a href="#">Stats</a>
+                  </li>
+                  <li>
+                      <a href="#">Players</a>
+                  </li>
+                  <li> 
+                      <a href="#"> Special goals</a>
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="#"> Expectations</a>
+                  </li>
+                  <li>
+                    <a href="#">Books</a>
+                  </li>
+                  <li>
+                    <a href="#">Tickets</a>
+                  </li>
+                  <li>
+                    <a href="#">Transfers</a>
+                  </li>
+                  <li>
+                    <a href="#">Store</a>
+                  </li>
+                  <li>
+                      <a href="#">Fantasy</a>
+                  </li>
+                </ul>
+              </div> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="det">
+        <a href="#" class="logo">Books</a>
+        <nav class="navigation">
+            <a href="#coach">Couch</a>
+            <a href="#player">Player</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <section class="cards" id="coach">
+        <h2 class="title">Coach</h2>
+        <div class="contain">
+                <div class="card">
+                    <div class="img">
+                        <img src="images/alex.png">
+                    </div>
+                    <div class="name">
+                        <h3> Alex Ferguson</h3>
+                    </div>
+                    <a href="#" class="more-detals">more detals</a>
+                    <div class="price">
+                      50$
+                    </div>
+                </div>
+                <div class="card1">
+                  <div class="img">
+                      <img src="images/carlo.png">
+                  </div>
+                  <div class="name">
+                      <h3>Carlo Ancelotti</h3>
+                  </div>
+                  <a href="#" class="more-detals">more detals</a>
+                  <div class="price">
+                    38$
+                  </div>
+                </div>
+            <div class="card2">
+              <div class="img">
+                  <img src="images/arsene.png">
               </div>
-              <ul class="links">
-                <li>
-                  <a href="matches.html"> Matches</a>
-                </li>
-                <li>
-                  <a href="coaches.html"> Coaches </a>
-                </li>
-                <li>
-                  <a href="standings.html">Standings</a>
-                </li>
-                <li>
-                  <a href="stats.html">Stats</a>
-                </li>
-                <li>
-                    <a href="players.html">Players</a>
-                </li>
-                <li> 
-                    <a href="goals.html"> Special goals</a>
-                </li>
-              </ul>
-              <ul class="links">
-                <li>
-                  <a href="expectations.html"> Expectations</a>
-                </li>
-                <li>
-                  <a href="books.html">Books</a>
-                </li>
-                <li>
-                  <a href="tickets.html">Tickets</a>
-                </li>
-                <li>
-                  <a href="transfers.html">Transfers</a>
-                </li>
-                <li>
-                  <a href="store.html">Store</a>
-                </li>
-                <li>
-                    <a href="fantasy.html">Fantasy</a>
-                </li>
-              </ul>
+              <div class="name">
+                  <h3>Arsene Wenger</h3>
+              </div>
+              <a href="#" class="more-detals">more detals</a>
+              <div class="price">
+                37.5$
+              </div>
             </div>
-            <!-- End Megamenu -->
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- End Header -->
-    <!-- Start Landing -->
-    <div class="landing">
-      <div class="container">
-        <div class="text">
-          <h1>Welcome, To Football frenzy</h1>
-          <p>Box to Box with the Premier League</p>
+            <div class="card3">
+              <div class="img">
+                  <img src="images/jose.png">
+              </div>
+              <div class="name">
+                  <h3>Jose Mourinho</h3>
+              </div>
+              <a href="#" class="more-detals">more detals</a>
+              <div class="price">
+                43$
+              </div>
+            </div>
         </div>
-        <div class="image">
-          <img src="images/logo.png" alt="logo" />
-        </div>
-      </div>
-    </div>
-    <!-- End Landing -->
-
-    <!-- start button up -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- end button up -->
-
-    <!-- start theme -->
-    <div class="theme">
-      <h2>Change Themes</h2>
-    <button onclick="swapStyleSheet('css/home-dark.css')">Dark</button>
-    <button onclick="swapStyleSheet('css/home.css')">Default</button>
-    </div>
-    <!-- end theme -->
-
-    <!-- Start Articles -->
-
-    <!-- today top news -->
-<div class="articles" id="articles">
-  <h2 class="main-title">TODAY TOP NEWS</h2>
-  <div class="container">
-    <div class="box">
-      <img src="images/news5.jpg" alt="" />
-      <div class="content">
-        <h3>Manchester News</h3>
-        <p>Vincent Kompany has emerged as a contender to become the next permanent manager of Burnley.</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-    <div class="box">
-      <img src="images/skysports.jpg" alt="" />
-      <div class="content">
-        <h3>Premier League predictions</h3>
-        <p>Match highlights of every Premier League game this season to be shown on FootballFrenzy website</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-    <div class="box">
-      <img src="images/news1.jpg" alt="" />
-      <div class="content">
-        <h3>How to follow the Premier League</h3>
-        <p>this Saturday as Liverpool travel to Newcastle and Man City face Leeds, live on FootballFrenzy.</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-    <div class="box">
-      <img src="images/news2.jpg" alt="" />
-      <div class="content">
-        <h3>Wolves player ratings vs Burnley</h3>
-        <p>His shots prices are a strong fancy of mine this weekend against arguably the worst team.</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-    <div class="box">
-      <img src="images/news3.jpg" alt="" />
-      <div class="content">
-        <h3>Leeds vs ManCity</h3>
-        <p> winger Crysencio Summerville will miss Saturday's home Premier League game against Manchester City after being ruled out for the rest of the season.</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-    </div>
-    <div class="box">
-      <img src="images/news4.jpg" alt="" />
-      <div class="content">
-        <h3>DAILY TELEGRAPH</h3>
-        <p>Plus:Man Utd begin search for new transfer negotiator after the resignation of Matt Judge; Tottenham are looking at alternatives to Mauricio Pochettino should Antonio Conte leave</p>
-      </div>
-      <div class="info">
-        <a href="news.html">More News</a>
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </div>
-  </div>
-  <div class="box">
-    <img src="images/news7.jpg" alt="" />
-    <div class="content">
-      <h3>Harry Kane can score twice</h3>
-      <p>scoring angle is one obviously well found in the market with 14/5 with Sky Bet on him scoring first and 5/6 on the anytime option.</p>
-    </div>
-    <div class="info">
-      <a href="news.html">More News</a>
-      <i class="fas fa-long-arrow-alt-right"></i>
-    </div>
-  </div>
-  <div class="box">
-    <img src="images/news6.jpg" alt="" />
-    <div class="content">
-      <h3>DAILY STAR</h3>
-      <p>Marcus Rashford has been linked with a move to Arsenal West Ham and Liverpool are only sides to have scored in every home Premier League game FootballFrenzy.</p>
-    </div>
-    <div class="info">
-      <a href="news.html">More News</a>
-      <i class="fas fa-long-arrow-alt-right"></i>
-    </div>
-  </div>
- </div>
-</div>
-
-<!-- BOOM! -->
-    <div class="articles" id="articles">
-      <h2 class="main-title">BOOM!</h2>
-      <div class="container">
-        <div class="box">
-          <img src="images/boom1.jpg" alt="" />
-          <div class="content">
-            <h3>Jarrod Bowen | West Ham | 9 goals</h3>
-            <p>After establishing himself as one of the Hammers' top attacking stars, Jarrod Bowen is earning plenty of plaudits and could be nearing an England call-up.</p>
+    </section>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <section class="player" id="player">
+      <h2 class="title">Player</h2>
+      <div class="contain">
+        <div class="card5">
+          <div class="img">
+              <img src="images/pirlo.png">
           </div>
-          <div class="info">
-            <a href="">More Goals</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="name">
+              <h3>Carlos Pirlo</h3>
           </div>
-        </div>
-        <div class="box">
-          <img src="images/boom2.jpg" alt="" />
-          <div class="content">
-            <h3>Emile Smith Rowe | Arsenal | 10 goals</h3>
-            <p>The young England midfielder has enjoyed a promising start to the 2021-22 season, netting in a 2-0 win against Leicester at the Emirates.</p>
+          <a href="#" class="more-detals">more detals</a>
+          <div class="price">
+            26$
           </div>
-          <div class="info">
-            <a href="goals.html">More Goals</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
+        </div> 
+        <div class="card4">
+          <div class="img">
+              <img src="images/zlatan.png">
           </div>
-        </div>
-        <div class="box">
-          <img src="images/boom3.jpg" alt="" />
-          <div class="content">
-            <h3> Jamie Vardy | Leicester City | 10 goals</h3>
-            <p>Jamie Vardy has shown few signs of slowing down on the goals front and he continues to lead the Leicester City line. </p>
+          <div class="name">
+              <h3>Zlatan Ibrahimovic</h3>
           </div>
-          <div class="info">
-            <a href="goals.html">More Goals</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
+          <a href="#" class="more-detals">more detals</a>
+          <div class="price">
+            65$
           </div>
-        </div>
-        <div class="box">
-          <img src="images/boom4.jpg" alt="" />
-          <div class="content">
-            <h3>Raphinha | Leeds United | 10 goals</h3>
-            <p>Leeds United's Brazilian star Raphinha was involved in 15 Premier League goals last term (six goals, nine assists) in 2021-22.</p>
+        </div> 
+        <div class="card6">
+          <div class="img">
+              <img src="images/zedan.png">
           </div>
-          <div class="info">
-            <a href="goals.html">More Goals</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="name">
+              <h3>Zain Eldin Zidan</h3>
           </div>
-        </div>
+          <a href="#" class="more-detals">more detals</a>
+          <i class="price">
+            30$
+          </i>
+        </div> 
+        <div class="card6">
+          <div class="img">
+              <img src="images/cruyff.png">
+          </div>
+          <div class="name">
+              <h3>Johan Cruyff</h3>
+          </div>
+          <a href="#" class="more-detals">more detals</a>
+          <div class="price2">
+             <div>16$</div> <del>29$</del>
+          </div>
+        </div> 
       </div>
-      </div>
-
-<!-- visit it now -->
-<div class="articles" id="articles">
-  <h2 class="main-title">NEW ITEMS</h2>
-  <div class="container">
-      <iframe src="history.html" width="1000" height="400"> </iframe>
-    </div>
-    <div class="container">
-      <div class="info">
-        <a href="history.html" target="_blank" >Visit It Now..</a>
-      </div>
-    </div>
-  </div>
-
-    <!-- HIGHLIGHTS -->
-    <div class="articles">
-      <h2 class="main-title">HIGHLIGHTS</h2>
-      <div class="container">
-        <div class="box">
-          <video controls height="150px" width="250px">
-            <source src="videos/highligh4.mp4" type="video/mp4">
-          </video>
-          <div class="content">
-            <h3>Manchester United 1-1 Chelsea </h3>
-            <p>Looks like we played so well though. I really love to see having both havertz and werner running at the defence, looked like it was causing lots of issues.</p>
-          </div>
-          <div class="info">
-            <a href="matches.html">See More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="box">
-          <video controls height="150px" width="250px">
-            <source src="videos/highligh2.mp4" type="video/mp4">
-          </video>
-          <div class="content">
-            <h3>Liverpool boss Klopp sends journalists into fits of laughter</h3>
-            <p>The German manager has an excellent grasp of the English language - however a translation issue on Friday caused some problems</p>
-          </div>
-          <div class="info">
-            <a href="matches.html">See More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="box">
-          <video controls height="200px" width="250px">
-            <source src="videos/highligh3.mp4" type="video/mp4">
-          </video>
-          <div class="content">
-            <h3>Shorts</h3>
-            <p>Virgil van Dijk shakes it off!! Liverpool defender Virgil van Dijk with a defensive header against Newcastle United in the Premier League (2019/20).
-            </p>
-          </div>
-          <div class="info">
-            <a href="matches.html">See More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/highligh1.jpg" alt="img" />
-          <div class="content">
-            <h3>Manchester City</h3>
-            <p>Improving year on year, the Phil Foden continues to share the scoring load at Man City while demonstrating his superb versatility across a number of different positions.</p>
-          </div>
-          <div class="info">
-            <a href="matches.html">See More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-    </div>
-    </div>
-    <!-- End Articles -->
-   
-    <!-- start footer -->
-
-<div class="footer">
+    </section>
+    <div class="footer" id="contact">
       <div class="container">
         <div class="box">
           <h3>Football Frenzy</h3>
           <ul class="social">
             <li>
-              <a href="https://facebook.com" target="blank" class="facebook">
+              <a href="https://facebook.com" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" target="blank" class="twitter">
+              <a href="https://twitter.com" class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://youtube.com" target="blank" class="youtube">
+              <a href="https://youtube.com" class="youtube">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
@@ -369,15 +230,13 @@
         </div>
         <div class="box">
           <ul class="links">
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
       </div>
     </div>
-</div>
-<!-- end footer -->
-
-  <!-- java link  -->
-  <script src='js/home.js'></script>
   </body>
-  </html>
+</html>
+
+    
+    
