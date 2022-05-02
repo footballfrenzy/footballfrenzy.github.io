@@ -1,0 +1,485 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #3F1052;
+  --main-color-alt: #ff2882;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ececec;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+.header {
+  background-color: white;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.header .logo {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header .logo {
+    width: 100%;
+    height: 50px;
+  }
+}
+/* start search */
+.dropbtn {
+margin-top: 20%;
+background-color:#fafafa;
+border-radius: 20px;
+color: black;
+padding: 12px;
+border: none;
+cursor: pointer;
+font-size: 18px;
+}
+@media (max-width: 767px) {
+.dropbtn {
+  margin: auto;
+}
+}
+.dropbtn:hover, .dropbtn:focus {
+background-color: var(--main-color);
+border-radius: 20px;
+color: white;
+}
+#myInput {
+box-sizing: border-box;
+background-image: url('../images/searchicon.png');
+background-position: 14px 12px;
+background-repeat: no-repeat;
+font-size: 16px;
+padding: 14px 20px 12px 45px;
+border: none;
+border-bottom: 1px solid #ddd;
+}
+#myInput:focus {outline: 2px solid var(--main-color);}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f6f6f6;
+min-width: 230px;
+border: 1px solid #ddd;
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: var(--section-background)}
+
+.show {display:block;}
+/* end search */
+
+.header .main-nav {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .header .main-nav {
+    margin: auto;
+  }
+}
+.header .main-nav > li:hover .mega-menu {
+  opacity: 1;
+  z-index: 100;
+  top: calc(100% + 1px);
+  border-radius: 3px;
+}
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  position: relative;
+  color: black;
+  padding: 0 30px;
+  overflow: hidden;
+  font-size: 18px;
+  transition: 0.1s;
+}
+@media (max-width: 767px) {
+  .header .main-nav > li > a {
+    padding: 10px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.header .main-nav > li > a:hover {
+  color: var(--main-color);
+  background-color: #fafafa;
+  border-top: 3px solid var(--main-color);
+  border-radius: 3px;
+}
+.header .mega-menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  background-color: white;
+  border-bottom: 3px solid var(--main-color);
+  z-index: -1;
+  display: flex;
+  gap: 40px;
+  top: calc(100% + 50px);
+  opacity: 0;
+  transition: top var(--main-transition), opacity var(--main-transition);
+}
+@media (max-width: 767px) {
+  .header .mega-menu {
+    flex-direction: column;
+    gap: 0;
+    padding: 5px;
+  }
+}
+.header .mega-menu .image img {
+  width: 200px;
+  max-width: 100%;
+  
+}
+@media (max-width: 991px) {
+  .header .mega-menu .image {
+    display: none;
+  }
+}
+.header .mega-menu .links {
+  min-width: 250px;
+  flex: 1;
+}
+.header .mega-menu .links li {
+  position: relative;
+}
+.header .mega-menu .links li:not(:last-child) {
+  border-bottom: 1px solid #e9e6e6;
+}
+@media (max-width: 767px) {
+  .header .mega-menu .links:first-of-type li:last-child {
+    border-bottom: 1px solid #e9e6e6;
+  }
+}
+.header .mega-menu .links li:hover {
+  background-color: var(--section-background);
+  border-radius: 6px;
+}
+.header .mega-menu .links li a {
+  color: var(--main-color);
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header .mega-menu .links li a i {
+  margin-right: 10px;
+}
+.det {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 110px;
+  background-color:rgb(4, 97, 4);
+  background-image: url("../images/back3.png");
+  background-size: 1290px 205px;
+}
+.navigation a{
+    background-color: rgba(30, 94, 30, 0.918);
+    color: white;
+    font-size: 1.02em;
+    padding: 13px 20px;
+    margin: 5px;
+    position: relative;
+    top: 107px;
+    right: 83px;
+    border-radius: 4px;
+}
+.navigation a:hover{
+  color: rgb(245, 0, 0);
+}
+.photolong{
+  width: 100%;
+  height: 350px;
+  z-index: 8;
+}
+.sign {
+  width: 19.5rem;
+  height: 3rem;
+  position: absolute;
+  top: 25rem;
+  left: 10.3rem;
+}
+.namesign {
+  width: 6.5rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 25.5rem;
+  left: 5.1rem;
+  font-size: 23px;
+}
+.email1 {
+  width: 6.5rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 23.3rem;
+  left: 10.32rem;
+  font-size: 20px;
+}
+.password1 {
+  width: 15rem;
+  height: 3rem;
+  position: absolute;
+  top: 25rem;
+  left: 30.4rem;
+}
+.namepassword {
+  width: 6.5rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 23.3rem;
+  left: 30.32rem;
+  font-size: 20px;
+}
+.clicklogin {
+  width: 14.5rem;
+  height: 2.6rem;
+  position: absolute;
+  top: 25.2rem;
+  left: 45.8rem;
+  background-color: #3F1052;
+  color: white;
+  border-radius: 4px;
+  text-align: 0 3px;
+  font-size: 20px;
+}
+.problem a{
+  color: black;
+  position: absolute;
+  top: 25.2rem;
+  right: 2rem;
+  font-size: 15.5px;
+}
+.problem1 a{
+  color: black;
+  position: absolute;
+  top: 27rem;
+  right: 2.2rem;
+  font-size: 15.5px;
+}
+.orsign {
+  position: absolute;
+  top: 32rem;
+  right: 38rem;
+  font-size: 13px;
+}
+.social {
+  display: flex;
+}
+@media (max-width: 767px) {
+.social {
+    justify-content: center;
+  }
+}
+.social li a {
+  background-color: #313131;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 179px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+  margin-left: 10px;
+  position: relative;
+  top: 15rem;
+  left: 13rem;
+}
+.social .Facebook {
+  background-color: #3B5998;
+}
+.social .Twitter {
+  background-color: #1da1f2;
+}
+.social .Youtube {
+  background-color: rgb(77, 77, 255);
+}
+.social .Google {
+  background-color: black;
+}
+.prizes {
+  width: 100%;
+  height: 1500px;
+}
+.one {
+  text-align: center;
+  font-size: 4em;
+}
+.overall1 {
+  position: absolute;
+  left: 2.3rem;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  width: 100%;
+}
+.runner-up {
+  position: absolute;
+  top: 680px;
+}
+.overall2 {
+  position: absolute;
+  left: 2.3rem;
+  top: 730px;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  width: 100%;
+}
+.erd-place {
+  position: absolute;
+  top: 918px;
+}
+.overall3 {
+  position: absolute;
+  left: 2.3rem;
+  top: 970px;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  width: 100%;
+}
+.cup {
+  position: absolute;
+  top: 1135px;
+}
+.overall4 {
+  position: absolute;
+  left: 2.3rem;
+  top: 1200px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.two {
+  position: absolute;
+  top: 1410px;
+  font-size: 1.7rem;
+}
+.of-month {
+  position: absolute;
+  top: 1465px;
+}
+.overall5 {
+  position: absolute;
+  left: 2.3rem;
+  top: 1525px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.three {
+  position: absolute;
+  top: 1695px;
+  font-size: 1.7rem;
+}
+.of-week {
+  position: absolute;
+  top: 1765px;
+}
+.overall6 {
+  position: absolute;
+  left: 2.3rem;
+  top: 1830px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.bb {
+  background-color: white;
+}
+.Statistics {
+  text-align: center;
+  font-size: 3rem;
+}
+table {
+  width: 80%;
+  margin-left: 90px;
+  margin-bottom: 80px;
+  font-weight: 70px;
+}
+td {
+  vertical-align: middle;
+  font-size: 20px;
+}
+thead {
+  background-color: blanchedalmond;
+  color: red;
+}
+tbody {
+  background-color: rgb(180, 98, 180);
+}
+  
