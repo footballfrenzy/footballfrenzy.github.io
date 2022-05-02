@@ -1,0 +1,291 @@
+body
+{
+    margin:0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ececec;
+}
+
+div.father
+{
+    width:1470px;
+    margin:auto;
+}
+
+div.parent
+{
+    width:250px;
+    height:365px;
+    display:inline-block;
+    position:relative;
+    left:5%;
+    margin:30px 15px 0 0;
+    transition-duration: 1.5s;
+    overflow:hidden;
+}
+
+div.parent:hover div.stadium img
+{
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
+div.stadium img
+{
+    width:250px;
+    height:150px;
+    transition-duration: 1.5s;
+}
+
+div.badge
+{
+    background-color: #fff;
+    border-radius:100%;
+    width:96px;
+    height:96px;
+    position:absolute;
+    top:25%;
+    left:50%;
+    margin-left:-50px;
+}
+
+div.badge img
+{
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:21%;
+    left:18.5%;
+}
+
+div.inf
+{
+    color:#fff;
+    text-align:center;
+}
+
+h2
+{
+    margin:33px 0 8px 0;
+    padding:6px 0 0 0;
+    font-family: Arial;
+}
+
+table
+{
+    width:220px;
+    margin: 10px;
+    position: absolute;
+    bottom:43px;
+    left: 5px;
+    color: rgba(255,255,255,0.9);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+table.color
+{
+    color:#000;
+}
+
+tr
+{
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+
+tr.color
+{
+    border-bottom: 1px solid #3f3f3f;
+}
+
+tr:last-of-type
+{
+    border: none;
+}
+
+th
+{
+    float: left;
+    font-weight: lighter;
+    font-size: 12px;
+    padding:5px;
+}
+
+td
+{
+    padding:5px;
+    font-weight: 100;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+}
+
+td.txtsize
+{
+    letter-spacing: -1px;
+    font-size: 12px;
+}
+
+td.dark
+{
+    color:#000;
+}
+
+div.city
+{
+    background-color: #6caee0;
+}
+
+div.arsenal
+{
+    background-color: red;
+}
+
+div.villa
+{
+    background-color: #480025;
+}
+
+div.chelsea
+{
+    background-color: #0A4595;
+}
+
+div.liverpool
+{
+    background-color: #e31b23;
+}
+
+div.united
+{
+    background-color:#d81920;
+}
+
+div.tottenham
+{
+    background-color: #f5f5f5;
+    color:#000;
+}
+
+div.everton
+{
+    background-color: #00369c;
+}
+
+div.newcastle
+{
+    background-color: #383838;
+}
+
+div.westham
+{
+    background-color: #7d2c3b;
+}
+
+div.leicester
+{
+    background-color:#273e8a;
+}
+
+div.leeds
+{
+    background-color: #f5cf25;
+    color:#000
+}
+
+div.wolverhampton
+{
+    background-color: #f9a01b;
+    color:#000;
+    vertical-align:bottom;
+}
+
+div.burnley
+{
+    background-color: #6a003a;
+}
+
+div.southampton
+{
+    background-color: #d71920;
+}
+
+div.brighton
+{
+    background-color: #0054a6;
+}
+
+div.brentford
+{
+    background-color:#c61d23;
+}
+
+div.watford
+{
+    background-color: #ffee00;
+    color:#000
+}
+
+div.crystal
+{
+    background-color: #eb302e;
+}
+
+div.norwich
+{
+    background-color: #00a94f;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+div.child
+{
+    position:absolute;
+    bottom:-100%;
+    transition:0.5s;
+}
+
+div.parent:hover div.child
+{
+    bottom:0;
+}
+
+div.child:hover 
+{
+    background-color: rgba(0,0,0,0.1);
+}
+
+button
+{
+    width:250px;
+    padding:10px;
+    background-color:inherit;
+    border:none;
+    cursor:pointer;
+}
+
+button img
+{
+    position:relative;
+    bottom:0.5px;
+    width:15px;
+    height:15px;
+    margin-right:5px;
+}
+
+span.fav
+{
+    position:relative;
+    bottom:1.5px;
+    font-size:15px;
+    color:#fff;
+    letter-spacing:2px;
+}
+
+span.black
+{
+    color:#000;
+}

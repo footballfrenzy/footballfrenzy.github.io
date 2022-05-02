@@ -89,6 +89,7 @@
   padding: 12px;
   border: none;
   cursor: pointer;
+  width: fit-content;
 }
 @media (max-width: 767px) {
   .dropbtn {
@@ -326,6 +327,7 @@
     padding: 15px;
     border-radius: 12px;
     font-size: 18px;
+    width: fit-content;
   }
   
   #myBtn:hover {
@@ -416,6 +418,7 @@
 .footer {
   background-color: #191919;
   padding: 20px;
+  margin-top: 25px;
 }
 @media (max-width: 767px) {
   .footer {
