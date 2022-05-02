@@ -253,7 +253,7 @@
 }
 .from-box{
     width: 400px;
-    height: 530px;
+    height: 500px;
     position: relative;
     margin: 7% auto;
     background-color: rgb(240, 232, 240);
@@ -280,8 +280,8 @@
     top: 0;
     left: 0;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: 110px;
     background: linear-gradient(to right, #b03eea,#7a44b0);
     border-radius: 35px;
 }
