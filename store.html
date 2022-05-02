@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Store</title>
+        <link rel="stylesheet" href="css/store.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+      </head>
+    <body>
+      <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <a href="index.html" class="logo"> Football Frenzy</a>
+        <ul class="main-nav">
+
+        <!-- start search -->
+        <li>
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="fantasy">Fantasy</a>
+    <a href="store.html">Store</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="book.html">Books</a>
+    <a href="history.html">New Items</a>
+    <a href="goals.html">Goals</a>
+    <a href="about.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</div>  
+</li>
+<!-- end search -->
+          <li><a href="login.html">Login</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="fav.html">Favorite Team</a></li>
+          <li>
+            <a href="#">More</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="images/img.png" alt="logo" />
+              </div>
+              <ul class="links">
+                <li>
+                  <a href="matches.html"> Matches</a>
+                </li>
+                <li>
+                  <a href="coaches.html"> Coaches </a>
+                </li>
+                <li>
+                  <a href="standings.html">Standings</a>
+                </li>
+                <li>
+                  <a href="stats.html">Stats</a>
+                </li>
+                <li>
+                    <a href="players.html">Players</a>
+                </li>
+                <li> 
+                    <a href="goals.html"> Special goals</a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="expectations.html"> Expectations</a>
+                </li>
+                <li>
+                  <a href="books.html">Books</a>
+                </li>
+                <li>
+                  <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                  <a href="transfers.html">Transfers</a>
+                </li>
+                <li>
+                  <a href="store.html">Store</a>
+                </li>
+                <li>
+                    <a href="fantasy.html">Fantasy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Megamenu -->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Header -->
+    <div class="background">
+        <div class="row">
+            <div class="col-2">
+              <div class="text">
+              <h1><em><span>Give Your Workout</span><br> A New Sporty Style!</em></h1>
+              <p><b><em>Success isn't always about greatness. It's about consistency. Consistent hard work gains success. Greatness will come</em></b></p>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="images/p1.png"/>
+            </div>
+          </div>
+        </div>
+         <!-- start button up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- end button up -->
+    <div class="small-container">
+        <h2 class="title">Stars</h2>
+        <div class="row">
+          <div class="col-3">
+           <img src="images/st1.jpg" >
+           <h4>Adidas stars</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-o"></i>
+           </div>
+           <p>$20.00</p>
+          </div>
+        <div class="col-3">
+         <img src="images/st2.jpg" height="270px">
+         <h4>Puma stars</h4>
+         <div class="rating">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-o"></i>
+         </div>
+         <p>$26.00</p>
+        </div>
+      <div class="col-3">
+       <img src="images/st3.jpg" >
+       <h4>Nike stars</h4>
+       <div class="rating">
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star-half-o"></i>
+       </div>
+       <p>$22.00</p>
+      </div>
+      </div>
+     <h2 class="title">T-shirts</h2>
+     <div class="row">
+      <div class="col-3">
+       <img src="images/te1.jpg" >
+       <h4>Liverpool T-shirt</h4>
+       <div class="rating">
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star-o"></i>
+       </div>
+       <p>$25.00</p>
+      </div>
+    <div class="col-3">
+     <img src="images/te2.jpg" height="270px">
+     <h4>Barcelona T-shirt</h4>
+     <div class="rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-o"></i>
+     </div>
+     <p>$28.00</p>
+    </div>
+  <div class="col-3">
+   <img src="images/tere.jpg" >
+   <h4>Real Madrid T-shirt</h4>
+   <div class="rating">
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star-half-o"></i>
+   </div>
+   <p>$30.00</p>
+  </div>
+  <div class="col-3">
+    <img src="images/te5.jpg" >
+    <h4>Man City T-shirt</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+    <p>$23.00</p>
+   </div>
+   <div class="col-3">
+    <img src="images/te6.jfif" >
+    <h4>Man United T-shirt</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+    <p>$20.00</p>
+   </div>
+   <div class="col-3">
+    <img src="images/te7.webp" >
+    <h4>Bayern Munich T-shirt</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+    </div>
+    <p>$26.00</p>
+   </div>
+  </div>
+  <h2 class="title">jackets</h2>
+  <div class="row">
+  <div class="col-3">
+    <img src="images/ja1.webp" >
+    <h4>Liverpool Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+    </div>
+    <p>$28.00</p>
+   </div>
+  <div class="col-3">
+    <img src="images/ja2.webp" >
+    <h4>Barcelona Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+    </div>
+    <p>$30.00</p>
+   </div>
+  <div class="col-3">
+    <img src="images/ja3.jpg" >
+    <h4>Real Madrid Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+    </div>
+    <p>$32.00</p>
+   </div>
+  <div class="col-3">
+    <img src="images/ja4.jpg" >
+    <h4>Man City Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+    <p>$25.00</p>
+   </div>
+  <div class="col-3">
+    <img src="images/ja5.jpg" >
+    <h4>Man United Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+    <p>$22.00</p>
+   </div>
+  <div class="col-3">
+    <img src="images/ja6.webp" >
+    <h4>Bayern Munich Jacket</h4>
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+    <p>$26.00</p>
+   </div>
+  </div>
+    </div>
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-4">
+           <a href="https://www.nike.com/" target="blank"><img src="images/br1.jpg"></a>
+         </div>
+          <div class="col-4">
+            <a href="https://www.adidas.com.eg/ar/" target="blank"><img src="images/br2.webp"></a>
+          </div>
+          <div class="col-4">
+            <a href="https://us.puma.com/us/en" target="blank"><img src="images/br3.png"></a>
+          </div>
+          <div class="col-4">
+            <a href="https://kappa-usa.com/" target="blank"><img src="images/br4.png"></a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.fila.com/" target="blank"><img src="images/br5.jpg"></a>
+          </div>
+        </div>
+    </div>
+    </div>
+     <!-- start footer -->
+
+<div class="footer">
+  <div class="container">
+    <div class="box">
+      <h3>Football Frenzy</h3>
+      <ul class="social">
+        <li>
+          <a href="https://facebook.com" target="blank" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="blank" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="blank" class="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="box">
+      <ul class="links">
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+<!-- end footer -->
+<script>
+// search button
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+// search button
+</script>
+<script>
+   // button up   
+mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+// button up  
+</script>
+    </body>
+</html>
