@@ -253,7 +253,7 @@
 }
 .from-box{
     width: 400px;
-    height: 550px;
+    height: 500px;
     position: relative;
     margin: 7% auto;
     background-color: rgb(240, 232, 240);
@@ -261,7 +261,7 @@
     overflow: hidden;
 }
 .butoon-box{
-    width: 250px ;
+    width: 230px ;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #bf72cb;
@@ -279,7 +279,7 @@
     top: 0;
     left: 0;
     position: absolute;
-    height: 85%;
+    height: 100%;
     width: 120px;
     background: linear-gradient(to right, #b03eea,#7a44b0);
     border-radius: 35px;
@@ -358,7 +358,7 @@ top: 3pc;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  right: 9px;
+  right: 5px;
 }
 .fa-instagram {
   background: linear-gradient(to right, #392c80,#933b90);
@@ -366,7 +366,7 @@ top: 3pc;
 }
 .icon{
   margin-top: 10px;
-  margin-left: 90px;
+  margin-left: 80px;
   
 }
 .logwith{
