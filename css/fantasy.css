@@ -388,9 +388,15 @@ display: block;
   line-height: 1.35rem;
   width: 100%;
 }
+.overal {
+  position: absolute;
+  bottom: 200px;
+  left: 12px;
+}
 .runner-up {
   position: absolute;
   top: 680px;
+  left: 11px;
 }
 .overall2 {
   position: absolute;
@@ -403,6 +409,7 @@ display: block;
 .erd-place {
   position: absolute;
   top: 918px;
+  left: 11px;
 }
 .overall3 {
   position: absolute;
@@ -415,6 +422,7 @@ display: block;
 .cup {
   position: absolute;
   top: 1135px;
+  left: 11px;
 }
 .overall4 {
   position: absolute;
@@ -432,6 +440,7 @@ display: block;
 .of-month {
   position: absolute;
   top: 1465px;
+  left: 12px;
 }
 .overall5 {
   position: absolute;
@@ -449,6 +458,7 @@ display: block;
 .of-week {
   position: absolute;
   top: 1765px;
+  left: 12px;
 }
 .overall6 {
   position: absolute;
