@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = description content = "The premier League News" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
     <!-- Css files -->
-    <link rel="stylesheet" href="css/premier-league-news.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../Css/premier-league-news.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,100 +15,94 @@
     <title>Premier league News</title>
 </head>
 <body>
-    <!-- Start Header -->
-    <div class="header">
-      <div class="container">
-        <a href="index.html" class="logo"> Football Frenzy</a>
-        <ul class="main-nav">
-
-        <!-- start search -->
-        <li>
- <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Search</button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="fantasy">Fantasy</a>
-    <a href="store.html">Store</a>
-    <a href="tickets.html">Tickets</a>
-    <a href="book.html">Books</a>
-    <a href="history.html">New Items</a>
-    <a href="goals.html">Goals</a>
-    <a href="about.html">About Us</a>
-    <a href="feedback.html">Feedback</a>
-  </div>
-</div>  
-</li>
-<!-- end search -->
-          <li><a href="login.html">Login</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="fav.html">Favorite Team</a></li>
-          <li>
-            <a href="#">More</a>
-            <!-- Start Megamenu -->
-            <div class="mega-menu">
-              <div class="image">
-                <img src="images/img.png" alt="logo" />
-              </div>
-              <ul class="links">
+        <!-- Start Header -->
+        <div class="header">
+            <div class="container">
+              <a href="index.html" class="logo"> Football Frenzy</a>
+              <ul class="main-nav">
+              <!-- start search -->
+              <li>
+       <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Search</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="fantasy.html">Fantasy</a>
+          <a href="store.html">Store</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="book.html">Books</a>
+          <a href="history.html">New Items</a>
+          <a href="goals.html">Goals</a>
+          <a href="about.html">About Us</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+      </div>  
+      </li>
+      <!-- end search -->
+                <li><a href="login.html">Login</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="fav.html">Favorite Team</a></li>
                 <li>
-                  <a href="matches.html"> Matches</a>
-                </li>
-                <li>
-                  <a href="coaches.html"> Coaches </a>
-                </li>
-                <li>
-                  <a href="standings.html">Standings</a>
-                </li>
-                <li>
-                  <a href="stats.html">Stats</a>
-                </li>
-                <li>
-                    <a href="players.html">Players</a>
-                </li>
-                <li> 
-                    <a href="goals.html"> Special goals</a>
-                </li>
-              </ul>
-              <ul class="links">
-                <li>
-                  <a href="expectations.html"> Expectations</a>
-                </li>
-                <li>
-                  <a href="books.html">Books</a>
-                </li>
-                <li>
-                  <a href="tickets.html">Tickets</a>
-                </li>
-                <li>
-                  <a href="transfers.html">Transfers</a>
-                </li>
-                <li>
-                  <a href="store.html">Store</a>
-                </li>
-                <li>
-                    <a href="fantasy.html">Fantasy</a>
+                  <a href="#">More</a>
+                  <!-- Start Megamenu -->
+                  <div class="mega-menu">
+                    <div class="image">
+                      <img src="images/img.png" alt="logo" />
+                    </div>
+                    <ul class="links">
+                      <li>
+                        <a href="matches.html"> Matches</a>
+                      </li>
+                      <li>
+                        <a href="coaches.html"> Coaches </a>
+                      </li>
+                      <li>
+                        <a href="standings.html">Standings</a>
+                      </li>
+                      <li>
+                        <a href="stats.html">Stats</a>
+                      </li>
+                      <li>
+                          <a href="players.html">Players</a>
+                      </li>
+                      <li> 
+                          <a href="goals.html"> Special goals</a>
+                      </li>
+                    </ul>
+                    <ul class="links">
+                      <li>
+                        <a href="expectations.html"> Expectations</a>
+                      </li>
+                      <li>
+                        <a href="books.html">Books</a>
+                      </li>
+                      <li>
+                        <a href="tickets.html">Tickets</a>
+                      </li>
+                      <li>
+                        <a href="transfers.html">Transfers</a>
+                      </li>
+                      <li>
+                        <a href="store.html">Store</a>
+                      </li>
+                      <li>
+                          <a href="fantasy.html">Fantasy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Megamenu -->
                 </li>
               </ul>
             </div>
-            <!-- End Megamenu -->
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- End Header -->
-      
-  
-      <!-- start button up -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-      <!-- end button up -->
+          </div>
+          <!-- End Header -->
+           <header> <a href="news.html">News</a> </header>
     <main>
-       
-        <header>News</header>
+    
         <!-- The first -->
         <section class="section-container-one">
             <figure>
                 <span class="image">
-                    <img src="images/salah-chasing-history.webp" alt="Salah chasing history for liverpool!">
+                    <img src="../Images/salah-chasing-history.webp" alt="Salah chasing history for liverpool!">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Salah chasing more history for Liverpool</h3></span>
@@ -121,9 +112,9 @@
             </figure>
             
             <div class="text-container-one">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-one1"><p>Howe Previews Liverpool test.</p></a></div>
+                <div><a href="#" class="link-container-one2"><p>Klopp provides update on Firmino, Tsimikas and janes.</p></a></div>
+                
             </div>
         </section>
 
@@ -131,7 +122,7 @@
         <section class="section-container-two">
             <figure>
                 <span class="image">
-                    <img src="images/kaneAndSon.webp" alt="Kane And Son!">
+                    <img src="../Images/kaneAndSon.webp" alt="Kane And Son!">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">FPL experts: What to do with Kane and Son?</h3></span>
@@ -141,16 +132,16 @@
             </figure>
 
             <div class="text-container-two">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-two1"><p>GW34 Lessons: is it time to sell Kane and Sone?</p></a></div>
+                <div><a href="#" class="link-container-two2"><p>FPL Update: Gabriel Jesus a risk warth taking?</p></a></div>
+                
             </div>
         </section>        
         <!-- The Third -->
         <section class="section-container-three">
             <figure>
                 <span class="image">
-                    <img src="images/robertson-part-of-liverpool-double-up.webp" alt="Scout Selectior: Robertson part of liverpool douple-up">
+                    <img src="../Images/robertson-part-of-liverpool-double-up.webp" alt="Scout Selectior: Robertson part of liverpool douple-up">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Scout Selection: Robertson part of Liverpool double-up</h3></span>
@@ -160,9 +151,9 @@
             </figure>
             
             <div class="text-container-three">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-three1"><p>FPL Show Ep 38: Expert's Free Hit plan.</p></a></div>
+                <div><a href="#" class="link-container-three2"><p>Best chip strategies for Fantasy run-in</p></a></div>
+                <div><a href="#" class="link-container-three3"><p>FPL Show Ep 38: Experts GW35 teams.</p></a></div>
             </div>
         </section>
 
@@ -170,7 +161,7 @@
         <section class="section-container-four">
             <figure>
                 <span class="image">
-                    <img src="images/Elneny-and-Xhaka.webp" alt="Elneny and Xhaka can steer Arsenal past West Ham">
+                    <img src="../Images/Elneny-and-Xhaka.webp" alt="Elneny and Xhaka can steer Arsenal past West Ham">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Elneny and Xhaka can steer Arsenal past West Ham</h3></span>
@@ -180,9 +171,9 @@
             </figure>
             
             <div class="text-container-four">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-four1"><p>Will West Ham extend scoring home run to 19?</p></a></div>
+                <div><a href="#" class="link-container-four2"><p>Classic match: West Ham 2-2 Arsenal</p></a></div>
+                <div><a href="#" class="link-container-four3"><p>Xhaka is your April Player of the Month!</p></a></div>
             </div>
         </section>
 
@@ -190,7 +181,7 @@
         <section class="section-container-five">
             <figure>
                 <span class="image">
-                    <img src="images/liverpool-return-to-the-top-after-beating-newcastle.webp" alt="liverpool return to the top after beating newcastle">
+                    <img src="../Images/liverpool-return-to-the-top-after-beating-newcastle.webp" alt="liverpool return to the top after beating newcastle">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">liverpool return to the top after beating newcastle</h3></span>
@@ -200,9 +191,10 @@
             </figure>
             
             <div class="text-container-five">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-five1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-five2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-five3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                
             </div>
         </section>
 
@@ -210,7 +202,7 @@
         <section class="section-container-six">
             <figure>
                 <span class="image">
-                    <img src="images/norwich seek to stay in relegation fight, Zaha benched.webp" alt="norwich seek to stay in relegation fight, Zaha benched">
+                    <img src="../Images/norwich seek to stay in relegation fight, Zaha benched.webp" alt="norwich seek to stay in relegation fight, Zaha benched">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">norwich seek to stay in relegation fight, Zaha benched</h3></span>
@@ -220,9 +212,10 @@
             </figure>
             
             <div class="text-container-six">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-six1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-six2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-six3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                
             </div>
         </section>
 
@@ -230,7 +223,7 @@
         <section class="section-container-seven">
             <figure>
                 <span class="image">
-                    <img src="images/Golden Boot Can Son or Ronaldo catch Salah.webp" alt="Golden Boot: Can Son or Ronaldo catch Salah?">
+                    <img src="../Images/Golden Boot Can Son or Ronaldo catch Salah.webp" alt="Golden Boot: Can Son or Ronaldo catch Salah?">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Golden Boot: Can Son or Ronaldo catch Salah?</h3></span>
@@ -240,9 +233,9 @@
             </figure>
             
             <div class="text-container-seven">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-seven1"><p>Premier League Golden Boot award winners.</p></a></div>
+                <div><a href="#" class="link-container-seven2"><p>Playmarker award: Salah assist spree puts him top.</p></a></div>
+                
             </div>
         </section>
 
@@ -250,7 +243,7 @@
         <section class="section-container-eight">
             <figure>
                 <span class="image">
-                    <img src="images/Playmaker award Salah assist spree puts him top.webp" alt="Playmaker award: Salah assist spree puts him top">
+                    <img src="../Images/Playmaker award Salah assist spree puts him top.webp" alt="Playmaker award: Salah assist spree puts him top">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Playmaker award: Salah assist spree puts him top</h3></span>
@@ -260,16 +253,16 @@
             </figure>
             
             <div class="text-container-eight">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-eight1"><p>Golden Boot: Can Son or Ronaldo catch Salah?</p></a></div>
+                <div><a href="#" class="link-container-eight2"><p>Premier League Playmaker of the Season award Winners.</p></a></div>
+                <div><a href="#" class="link-container-eight3"><p>Best assists in Premier League history.</p></a></div>
             </div>
         </section>
         <!-- The ninth -->
         <section class="section-container-nine">
             <figure>
                 <span class="image">
-                    <img src="images/FPL team news Salah and Alexander-Arnold benched.webp" alt="FPL team news: Salah and Alexander-Arnold benched">
+                    <img src="../Images/FPL team news Salah and Alexander-Arnold benched.webp" alt="FPL team news: Salah and Alexander-Arnold benched">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">FPL team news: Salah and Alexander-Arnold benched</h3></span>
@@ -279,17 +272,18 @@
             </figure>
             
             <div class="text-container-nine">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-nine1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-nine2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-nine3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                
             </div>
         </section>
 
         <!-- The tenth -->
         <section class="section-container-ten">
-            <figure>
+            <figure class="figure-container-ten">
                 <span class="image">
-                    <img src="images/How to plan for Double Gameweek 36.webp" alt="How to plan for Double Gameweek 36">
+                    <img src="../Images/How to plan for Double Gameweek 36.webp" alt="How to plan for Double Gameweek 36">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">How to plan for Double Gameweek 36</h3></span>
@@ -299,9 +293,10 @@
             </figure>
             
             <div class="text-container-ten">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-ten1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-ten2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                <div><a href="#" class="link-container-ten3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></div>
+                
             </div>
         </section>
 
@@ -309,7 +304,7 @@
         <section class="section-container-eleven">
             <figure>
                 <span class="image">
-                    <img src="images/Ronaldo pegs back Chelsea but top-four race looks lost.webp" alt="Ronaldo pegs back Chelsea but top-four race looks lost">
+                    <img src="../Images/Ronaldo pegs back Chelsea but top-four race looks lost.webp" alt="Ronaldo pegs back Chelsea but top-four race looks lost">
                 </span>
                 <figcaption>
                     <span><h3 class="head2">Ronaldo pegs back Chelsea but top-four race looks lost</h3></span>
@@ -319,44 +314,63 @@
             </figure>
             
             <div class="text-container-eleven">
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div><a href="#" class="link-container-eleven1"><p>Ronaldo rescues point for Man Utd against Chelsea.</p></a></div>
+                <div><a href="#" class="link-container-eleven2"><p>Rangnick discusses Ronaldo's future.</p></a></div>
+                
+            </div>
+        </section>
+        <section class="section-container-twelve">
+            <figure>
+                <span class="image">
+                    <img src="../Images/GW35 Lessons Salag and Alexander-Arnold can profit from rest.webp" alt="GW35 Lessons: Salah and Alexander-Arnold can profit from rest">
+                </span>
+                <figcaption>
+                    <span><h3 class="head2">GW35 Lessons: Salah and Alexander-Arnold can profit from rest</h3></span>
+                    <span><a href="#">Fantasy Premier League</a></span>
+                    <span><p class="paragraph">The Scout says Liverpool duo being benched at Newcastle could be good news for their owners in DGW36</p></span>
+                </figcaption>
+            </figure>
+            
+            <div class="text-container-eleven">
+                <div><a href="#" class="link-container-twelve1"><p>FPL Update: is Son essential for Double GW36?</p></a></div>
+                <div><a href="#" class="link-container-twelve2"><p>Jurgen Klopp on Newcastle win, James Milner's performance and squad strength.</p></a></div>
+                <div><a href="#" class="link-container-twelve3"><p>FPL team news: Arteta provides Saka update.</p></a></div>
+                
             </div>
         </section>
     </main>
-   <!-- start footer -->
+    <!-- start footer -->
 
-<div class="footer">
-    <div class="container">
-      <div class="box">
-        <h3>Football Frenzy</h3>
-        <ul class="social">
-          <li>
-            <a href="https://facebook.com" class="facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" class="twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://youtube.com" class="youtube">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-        </ul>
+    <div class="footer">
+        <div class="container">
+          <div class="box">
+            <h3>Football Frenzy</h3>
+            <ul class="social">
+              <li>
+                <a href="https://facebook.com" class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com" class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com" class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul class="links">
+              <li><a href="#">Feedback</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
       </div>
-      <div class="box">
-        <ul class="links">
-          <li><a href="#">Feedback</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-  </div>
-<!-- end footer -->
+  <!-- end footer -->
    <!-- java link  -->
    <script src='js/home.js'></script>
 </body>
