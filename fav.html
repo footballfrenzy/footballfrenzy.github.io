@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Favourite Team</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/home.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/4c8eb893bb.js" crossorigin="anonymous"></script>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        
+
+    </head>
+    <body>
+
+            <!-- Start Header -->
+    <div class="header">
+        <div class="container">
+          <a href="index.html" class="logo"> Football Frenzy</a>
+          <ul class="main-nav">
+  
+          <!-- start search -->
+          <li>
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="fantasy">Fantasy</a>
+      <a href="store.html">Store</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="book.html">Books</a>
+      <a href="history.html">New Items</a>
+      <a href="goals.html">Goals</a>
+      <a href="about.html">About Us</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>  
+  </li>
+  <!-- end search -->
+            <li><a href="login.html">Login</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="fav.html">Favorite Team</a></li>
+            <li>
+              <a href="#">More</a>
+              <!-- Start Megamenu -->
+              <div class="mega-menu">
+                <div class="image">
+                  <img src="images/img.png" alt="logo" />
+                </div>
+                <ul class="links">
+                  <li>
+                    <a href="matches.html"> Matches</a>
+                  </li>
+                  <li>
+                    <a href="coaches.html"> Coaches </a>
+                  </li>
+                  <li>
+                    <a href="standings.html">Standings</a>
+                  </li>
+                  <li>
+                    <a href="stats.html">Stats</a>
+                  </li>
+                  <li>
+                      <a href="players.html">Players</a>
+                  </li>
+                  <li> 
+                      <a href="goals.html"> Special goals</a>
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="expectations.html"> Expectations</a>
+                  </li>
+                  <li>
+                    <a href="books.html">Books</a>
+                  </li>
+                  <li>
+                    <a href="tickets.html">Tickets</a>
+                  </li>
+                  <li>
+                    <a href="transfers.html">Transfers</a>
+                  </li>
+                  <li>
+                    <a href="store.html">Store</a>
+                  </li>
+                  <li>
+                      <a href="fantasy.html">Fantasy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Megamenu -->
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Header -->
+  
+    <!-- start button up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- end button up -->
+
+        <div class="father">
+
+            <!-- Arsenal Start-->
+                <div class="parent arsenal">
+                    <div class="stadium">
+                        <img src="stadiums/arsenal.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/arsenal.png">
+                    </div>
+                <a href="https://www.arsenal.com/">
+                    <div class="inf arsenal">
+                        <h2>Arsenal</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Mikel Arteta</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Emirates Stadium</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1886</td>
+                        </tr>
+                    </table>
+    
+                    <div class="child">
+                        <button  onclick="myfunction1()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star1"/>
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Arsenal End-->
+
+            <!-- Chelsea Start-->
+                <div class="parent chelsea">
+                    <div class="stadium">
+                        <img src="stadiums/chelsea.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/chelsea.png">
+                    </div>
+                <a href="https://www.chelseafc.com/en"> 
+                    <div class="inf chelsea">
+                        <h2>Chelsea</h2>
+                    </div>
+                </a>
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Thomas Tuchel</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Stamford Bridge</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1905</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction2()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star2">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Chelsea End-->
+
+            <!-- Liverpool Start-->
+                <div class="parent liverpool">
+                    <div class="stadium">
+                        <img src="stadiums/liverpool.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/liverpool.jpg">
+                    </div>
+                <a href="https://www.liverpoolfc.com/">
+                    <div class="inf liverpool">
+                        <h2>Liverpool</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Jürgen Klopp</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Anfield</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td >1892</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction3()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star3">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Liverpool End-->
+
+            <!-- City Start-->
+                <div class="parent city">
+                    <div class="stadium">
+                        <img src="stadiums/man city.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/city.png">
+                    </div>
+
+                <a href="https://www.mancity.com/">
+                    <div class="inf city">
+                        <h2>Manchester City</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Pep Guardiola</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Etihad Stadium</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1880</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction4()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star4">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- City End-->
+
+            <!-- Aston Villa Start-->
+                <div class="parent villa">
+                    <div class="stadium">
+                        <img src="stadiums/villa.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/villa.png">
+                    </div>
+
+                <a href="https://www.avfc.co.uk/">
+                    <div class="inf villa">
+                        <h2>Aston Villa</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Steven Gerrard</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Villa Park</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1874</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction5()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star5">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Aston Villa End-->
+
+            <!-- Man United Start-->
+                <div class="parent united">
+                    <div class="stadium">
+                        <img src="stadiums/man united.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/united.png">
+                    </div>
+                <a href="https://www.manutd.com/">
+                    <div class="inf united">
+                        <h2>Manchester United</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Ralf Rangnick</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Old Trafford</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</td>
+                            <td  >1878</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction6()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star6">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Man United End-->
+
+            <!-- Tottenham Start-->
+                <div class="parent tottenham">
+                    <div class="stadium">
+                        <img src="stadiums/tottenham.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/spurs.jpg">
+                    </div>
+                <a href="https://www.tottenhamhotspur.com/">
+                    <div class="inf tottenham">
+                        <h2>Tottenham Hotspur</h2>
+                    </div>
+                </a>
+
+                    <table class="color">
+                        <tr class="color">
+                            <th>Manager</th>
+                            <td class="dark">Antonio Conte</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Stadium</th>
+                            <td class="dark">Tottenham Hotspur</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Founded</th>
+                            <td class="dark">1882</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction7()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png" id="star7">
+                                <span class="fav black">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Tottenham End-->
+
+            <!-- Everton Start-->
+                <div class="parent everton">
+                    <div class="stadium">
+                        <img src="stadiums/everton.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/everton.png">
+                    </div>
+                <a href="https://www.evertonfc.com/">
+                    <div class="inf everton">
+                        <h2>Everton</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Frank Lampard</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Goodison Park</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1878</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction8()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star8">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Everton End-->
+
+            <!-- NewCastle Start-->
+                <div class="parent newcastle">
+                    <div class="stadium">
+                        <img src="stadiums/new castle.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/newcastle.png">
+                    </div>
+                <a href="https://www.nufc.co.uk/"> 
+                    <div class="inf newcastle">
+                        <h2>Newcastle United</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Eddie Howe</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >st.Jomes's Park</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1892</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction9()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star9">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- NewCastle End-->
+
+            <!-- WestHam Start-->
+                <div class="parent westham">
+                    <div class="stadium">
+                        <img src="stadiums/west ham.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/westham.png">
+                    </div>
+                <a href="https://www.whufc.com/">
+                    <div class="inf westham">
+                        <h2>West Ham United</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >David Moyes</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >London Stadium</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1895</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction10()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star10">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- WestHam End-->
+
+            <!-- Leicester City Start-->
+                <div class="parent leicester">
+                    <div class="stadium">
+                        <img src="stadiums/leicester.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/leicester.png">
+                    </div>
+                <a href="https://www.lcfc.com/">
+                    <div class="inf leicester">
+                        <h2>Leicester City</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Brendan Rodgers</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >King Power Stadium</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1884</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction11()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star11">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Leicester City End-->
+
+            <!-- Leeds Start-->
+                <div class="parent leeds">
+                    <div class="stadium">
+                        <img src="stadiums/leeds.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/leeds.png">
+                    </div>
+                <a href="https://www.leedsunited.com/">
+                    <div class="inf leeds">
+                        <h2>Leeds United</h2>
+                    </div>
+                </a>
+
+                    <table class="color">
+                        <tr class="color">
+                            <th>Manager</th>
+                            <td class="dark">Jesse Marsch</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Stadium</th>
+                            <td class="dark">Elland Road</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Founded</th>
+                            <td class="dark">1919</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction12()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png" id="star12">
+                                <span class="fav black">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Leeds End-->
+
+            <!-- Burnley Start-->
+                <div class="parent burnley">
+                    <div class="stadium">
+                        <img src="stadiums/burnley.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/burnley.jpg">
+                    </div>
+                <a href="https://www.burnleyfootballclub.com/">
+                    <div class="inf burnley">
+                        <h2>Burnley</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Mike Jackson</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Turf Moor</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1882</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction13()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star13">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Burnley End-->
+
+            <!-- Wolverhampton Start-->
+                <div class="parent wolverhampton">
+                    <div class="stadium">
+                        <img src="stadiums/wolves.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/wolves.png">
+                    </div>
+                <a href="https://www.wolves.co.uk/">
+                    <div class="inf wolverhampton">
+                        <h2>Wolverhampton</h2>
+                    </div>
+                </a>
+
+                    <table class="color">
+                        <tr class="color"> 
+                            <th>Manager</th>
+                            <td class="dark">Bruno Lage</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Stadium</th>
+                            <td class="dark">Molineux Stadium</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Founded</th>
+                            <td class="dark">1877</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction14()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png" id="star14">
+                                <span class="fav black">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Wolverhampton End-->
+
+            <!-- Southampton Start-->
+                <div class="parent southampton">
+                    <div class="stadium">
+                        <img src="stadiums/southampton.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/southampton.png">
+                    </div>
+                <a href="https://www.southamptonfc.com/">
+                    <div class="inf southampton">
+                        <h2>Southampton</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Ralph Hasenhüttl</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >St Mary's Stadium</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1885</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction15()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star15">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Southampton End-->
+
+            <!-- Brighton Start-->
+                <div class="parent brighton">
+                    <div class="stadium">
+                        <img src="stadiums/brighton.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/brighton.png">
+                    </div>
+                <a href="https://www.brightonandhovealbion.com/">
+                    <div class="inf brighton">
+                        <h2>Brighton</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Graham Potter</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td class="txtsize">American Express Community</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1901</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction16()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star16">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Brighton End-->
+
+            <!-- Brentford Start-->
+                <div class="parent brentford">
+                    <div class="stadium">
+                        <img src="stadiums/brentford.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/brentford.png">
+                    </div>
+                <a href="https://www.brentfordfc.com/">
+                    <div class="inf brentford">
+                        <h2>Brentford</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Thomas Frank</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Brentford Community</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1889</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction17()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star17">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Brentford End-->
+
+            <!-- Watford Start-->
+                <div class="parent watford">
+                    <div class="stadium">
+                        <img src="stadiums/watford.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/watford.png">
+                    </div>
+                <a href="https://www.watfordfc.com/">
+                    <div class="inf watford">
+                        <h2>Watford</h2>
+                    </div>
+                </a>
+
+                    <table class="color">
+                        <tr class="color">
+                            <th>Manager</th>
+                            <td class="dark">Roy Hodgson</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Stadium</th>
+                            <td class="dark">Vicarage Road</td>
+                        </tr>
+    
+                        <tr class="color">
+                            <th>Founded</th>
+                            <td class="dark">1881</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction18()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png" id="star18">
+                                <span class="fav black">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Watford End-->
+
+            <!-- Crystal Palace Start-->
+                <div class="parent crystal">
+                    <div class="stadium">
+                        <img src="stadiums/palace.jpg">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/palace.png">
+                    </div>
+                <a href="https://www.cpfc.co.uk/">
+                    <div class="inf crystal">
+                        <h2>Crystal Palace</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Patrick Vieira</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Selhurst Park</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1905</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction19()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star19">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Crystal Palace End-->
+            
+            <!-- Norwich City Start-->
+                <div class="parent norwich">
+                    <div class="stadium">
+                        <img src="stadiums/norwich.png">
+                    </div>
+                    <div class="badge">
+                        <img src="logos/norwich.png">
+                    </div>
+                <a href="https://www.canaries.co.uk/">
+                    <div class="inf norwich">
+                        <h2>Norwich City</h2>
+                    </div>
+                </a>
+
+                    <table>
+                        <tr>
+                            <th>Manager</th>
+                            <td  >Dean Smith</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Stadium</th>
+                            <td  >Carrow Road</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Founded</th>
+                            <td  >1902</td>
+                        </tr>
+                    </table>
+
+                    <div class="child">
+                        <button  onclick="myfunction20()">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/star--v1.png" id="star20">
+                                <span class="fav">Add to Favourite</span>
+                        </button>
+                    </div>        
+                </div>
+            <!-- Norwich City End-->
+        </div>
+
+            <!-- start footer -->
+
+            <div class="footer">
+                <div class="container">
+                <div class="box">
+                    <h3>Football Frenzy</h3>
+                    <ul class="social">
+                    <li>
+                        <a href="https://facebook.com" target="blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="blank" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="links">
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!-- end footer -->
+
+
+        <script src="js/clubs.js"></script>
+        <script src='js/home.js'></script>
+
+
+    </body>
+</html>
