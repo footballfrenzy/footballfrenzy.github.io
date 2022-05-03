@@ -1,0 +1,113 @@
+body
+{
+    margin:0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+div.parent
+{
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+div.manager
+{
+    display: inline-block;
+    width: 400px;
+    height: 130px;
+    margin: 10px;
+    padding:15px;
+    left: 70px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(63 16 82 / 10%);
+    transition: 0.5s;
+
+}
+
+div.manager:hover
+{
+    background-color: rgb(63 16 82 / 10%);
+    transition: 0.5s;
+}
+
+div.image
+{
+    width:fit-content;
+}
+
+div.coache img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%; 
+}
+
+img.badge
+{
+    width:15px;
+    height:15px;
+    margin: 0px 3px -1px 0px;
+}
+
+div.name
+{
+    margin:0;
+    padding:2px 0 0 5px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+div.list
+{
+    position: absolute;
+    width: 270px;
+    right: 22px;
+    top: 9px;
+}
+
+
+ul.row
+{
+    list-style-type: none;
+    border-bottom: 1px solid #8d8c8c;
+    padding: 0 0 4px 0;
+    margin:0 0 5px 0 ;
+}
+
+ul.row:last-of-type
+{
+    border: none;
+}
+
+ul.row li
+{
+    display: inline;
+    font-size: 14px;
+    color: #8d8c8c;
+}
+
+ul.row li.right
+{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+h4
+{
+    margin:4px 0 0 0 ;
+}
+
+div.rrr
+{
+    margin-left: 6px;
+}
+
+div.lll
+{
+    margin-left: -11px;
+}
