@@ -6,14 +6,33 @@
 }
 
 main {
-    height: 2500px;
+    position: relative;
+    top: 63px;
 }
 
 header {
     font-size: 3rem;
     text-align: center;
     border-radius: 2px;
-    position: static;
+    border-radius: solid;
+    border-radius: #AAA;
+    position: sticky;
+    top: 0;
+    background-color: #74606030;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.head2:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
 }
 
 figure {
@@ -60,7 +79,7 @@ figcaption span p {
     width: 350px;
 }
 
-.text-container-one,
+.text-container-one ,
 .text-container-two,
 .text-container-three, 
 .text-container-four, 
@@ -74,7 +93,7 @@ figcaption span p {
     display: inline-block;
     position: relative;
     left: 767px;
-    width: 300px;
+    width: 400px;
     bottom: 208px;
     background: #74606030;
     height: 185px;
@@ -83,53 +102,383 @@ figcaption span p {
     text-align: center;
 }
 
-.section-container-two{
+.section-container-one {
     position: relative;
-    bottom: 204px;
-    margin-top: 10px;
+    height: 200px;
 }
-.section-container-three{
+
+.section-container-two {
     position: relative;
     margin-top: 10px;
-    bottom: 407px;
+    height: 200px;
+}
+.section-container-three {
+    position: relative;
+    margin-top: 10px;
+    height: 200px;
 }
 .section-container-four {
     position: relative;
     margin-top: 10px;
-    bottom: 611px;
+    height: 200px;
 }
 .section-container-five {
     position: relative;
     margin-top: 10px;
-    bottom: 815px;
+    height: 200px;
 }
 .section-container-six {
     position: relative;
     margin-top: 10px;
-    bottom: 1017px;
+    height: 200px;
 }
 .section-container-seven {
     position: relative;
     margin-top: 10px;
-    bottom: 1222px;
+    height: 200px;
 }
 .section-container-eight {
     position: relative;
     margin-top: 10px;
-    bottom: 1429px;
+    height: 200px;
 }
 .section-container-nine {
     position: relative;
     margin-top: 10px;
-    bottom: 1635px;
+    height: 200px;
 }
 .section-container-ten {
     position: relative;
     margin-top: 10px;
-    bottom: 1838px;
+    height: 200px;
+    width: 100%;
 }
 .section-container-eleven {
     position: relative;
     margin-top: 10px;
-    bottom: 2043px;
+    height: 200px;
+}
+
+div a p::before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(111, 72, 241);
+    position: absolute;
+    left: -7px;
+}
+
+div.footer {
+    position: relative;
+    top: 90px;
+}
+
+.text-container-ten {
+    display: none;
+}
+
+.figure-container-ten {
+    width: 100%;
+}
+
+.link-container-two {
+    text-decoration: none;
+}
+
+.link-container-two p:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a p {
+    display: inline-block;
+    width: 228px;
+}
+
+.link-container-one1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 13px;
+}
+
+.link-container-one2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 52px;
+    padding-left: 16px;
+    margin-left: 18px;
+}
+
+.link-container-two1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-left: 32px;
+    padding-left: 32px;
+}
+
+.link-container-two2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-left: 19px;
+    padding-left: 16px;
+}
+
+.link-container-three1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+}
+
+.link-container-three2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 31px;
+    padding-left: 31px;
+}
+
+.link-container-three3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-left: 12px;
+}
+
+.link-container-four1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-left: 27px;
+    margin-top: 0;
+    padding-left: 26px;
+}
+
+.link-container-four2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 32px;
+    padding-left: 32px;
+}
+
+.link-container-four3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 19px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.link-container-five1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0px;
+}
+
+.link-container-five2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0px;
+}
+
+.link-container-five3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;
+}
+
+.link-container-six1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;
+}
+
+.link-container-six2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;
+}
+
+.link-container-six3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;
+}
+
+.link-container-seven1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 26px;
+    padding-left: 22px;
+    padding-top: 21px;
+}
+
+.link-container-seven2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 31px;
+    padding-left: 29px;
+    padding-top: 10px;
+}
+
+.link-container-eight1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    position: relative;
+    bottom: 21px;
+    top: 10px;
+    margin-top: 0;
+    padding-left: 13px;
+    margin-left: 15px;
+}
+
+.link-container-eight2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    bottom: 21px;
+    top: 10px;
+    margin-top: 0;
+    margin-left: 10px;
+    padding-left: 11px;
+}
+
+.link-container-eight3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    bottom: 21px;
+    top: 10px;
+    margin-top: 0;
+}
+
+.link-container-nine1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;
+}
+
+.link-container-nine2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;  
+}
+
+.link-container-nine3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: -3px;
+    padding-left: 0;    
+}
+
+.link-container-ten1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+}
+
+.link-container-ten2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+}
+
+.link-container-ten3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.link-container-eleven1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.link-container-eleven2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.link-container-twelve1 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.link-container-twelve2 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 7px;
+    padding-left: 13px;
+} 
+
+.link-container-twelve3 p {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 22px;
+    padding-left: 29px;
 }
