@@ -480,16 +480,18 @@ table {
   margin-left: 90px;
   margin-bottom: 80px;
   font-weight: 70px;
+  text-align: center;
 }
 td {
   vertical-align: middle;
   font-size: 20px;
+  padding: 10px;
 }
 thead {
-  background-color: blanchedalmond;
-  color: red;
+  background-color: var(--main-color);
+  color: white;
 }
 tbody {
-  background-color: rgb(180, 98, 180);
+  background-color: #ececec;
 }
   
