@@ -303,7 +303,6 @@
   .landing .image img {
     position: relative;
     width: 600px;
-    animation: up-and-down 5s linear infinite;
   }
   @media (max-width: 991px) {
     .landing .image {
@@ -408,9 +407,6 @@
 }
 .articles .info i {
   color: var(--main-color);
-}
-.articles :hover .info i {
-  animation: moving-arrow 0.6s linear infinite;
 }
 /* End Articles */
 
