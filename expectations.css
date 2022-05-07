@@ -57,59 +57,10 @@ input{
     outline: none;
     border-right: 0px;
 }
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:root {
-  --main-color: #3F1052;
-  --main-color-alt: #ff2882;
-  --main-transition: 0.3s;
-  --main-padding-top: 100px;
-  --main-padding-bottom: 100px;
-  --section-background: #ececec;
-}
-html {
-  scroll-behavior: smooth;
-  background-color: white;
-}
-body {
-  font-family: 'Work Sans', sans-serif;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* Small */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-/* End Global Rules */
+
+
+
+
 /* Start Header */
 .header {
   background-color: white;
