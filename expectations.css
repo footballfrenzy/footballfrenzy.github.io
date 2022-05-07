@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border: 5px #3f1052 solid; 
+    width: 100%;
+    border-spacing: 0px;
+}
+    
+
+table td{
+    text-align: center;
+    padding: 15px;
+    border-spacing: 0px;
+    background-color: #eee;
+    border: #3f1052 1px solid;
+}
+
+caption{
+    text-align: center;
+    font-size: 30px;
+    color: #3d0852;
+}
+
+img{
+    width: 50px;
+    height: 30px;
+    border: 5px;
+
+}
+
+label{
+    font-size: large;
+}
+
+.host{
+    font-size: 27px;
+    text-align: center;
+    color: #3d0852;
+}
+
+.x{
+    font-size: 27px;
+    text-align: center;
+    text-align-last: right;
+    color: #3d0852;
+    border-right: 0px;
+}
+
+input{
+    accent-color: #3d0852;
+}
+
+.fi{
+    text-align-last: right;    
+    outline: none;
+    border-right: 0px;
+}

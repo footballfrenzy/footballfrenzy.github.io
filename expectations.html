@@ -4,71 +4,163 @@
 
     <head>
         <title>Expectations</title>
-        <style>
-            span{
-                margin: 50px;
-            }
-
-            table th{
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="expectations.css">
+        <meta charset ="UFO-8" />
     </head>
 
     <body>
-        <h1>Expectations</h1>
+        <h1 style="color: #3f1052;">Expectations</h1> 
         <table>
-            <thead>
-                <th>
-                    <div>
-                        <div>
-                            <span>
-                                <img src="sengal.png" alt="" width="70px" height="50px">
-                                <img src="egypt.png" alt="" width="70px" height="50px">
-                            </span>
-
-                            <span>
-                                <img src="sengal.png" alt="" width="70px" height="50px">
-                                <img src="egypt.png" alt="" width="70px" height="50px">
-                            </span>
-
-                            <span>
-                                <img src="sengal.png" alt="" width="70px" height="50px">
-                                <img src="egypt.png" alt="" width="70px" height="50px">
-                            </span>
-                        </div>
-                    </div>
-                </th>
-            </thead>
-
+            <caption>Today's Matches</caption>
             <tbody>
-                <td>
-                    <div>
-                        <div>
-                            <input id="sen" type="radio" name="win1" value="sen">
-                            <label for="sen">SENGAL</label>
-                            <input id="egy" type="radio" name="win1" value="egy">
-                            <label for="egy">EGYPT</label>
-
-                            <input id="sud" type="radio" name="win2" value="sud">
-                            <label for="sud">SUDAN</label>
-                            <input id="mor" type="radio" name="win2" value="mor">
-                            <label for="mor">MOROCO</label>
-
-                            <input id="alg" type="radio" name="win3" value="alg">
-                            <label for="alg">ALGERIA</label>
-                            <input id="tun" type="radio" name="win3" value="tun">
-                            <label for="tun">TUNISIA</label>
-                        </div>
-
-                        <div>
-                            <input type="number" name="val" value="0" step="1" min="0" max="70">
-                            VS
-                            <input type="number" name="val" value="0" step="1" min="0" max="70">
-                        </div>
-                </td>
+                <tr>
+                    <td class="x">Who Wins?</td> 
+                    <td class="x"></td> 
+                </tr>
+                <form method="get" >
+                <tr>
+                    <td class="host">The Hosted Team</td>
+                    <td class="host">The Hosting Team</td>
+                </tr>
+                <tr>  
+                    <td>
+                        
+                        <input id="man" type="radio" name="win1" value="man">
+                        <label for="man">Man United</label>
+                        <img src="640px-Manchester_United_FC_crest.svg.png">                       
+                    </td>
+                    <td>
+                        <input id="eve" type="radio" name="win1" value="eve">
+                        <label for="eve">Everton FC</label>
+                        <img src="1200px-Everton_FC_logo.svg.png">                        
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <input id="cit" type="radio" name="win2" value="cit">
+                        <label for="cit">Man City</label>
+                        <img src="Manchester_City_FC_badge.svg.webp">
+                    </td>
+                    <td>
+                        <input id="liv" type="radio" name="win2" value="liv">
+                        <label for="liv">Liverpool FC</label>
+                        <img src="Liverpool_FC.svg.webp">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="che" type="radio" name="win3" value="che">
+                        <label for="che">Chelcea FC</label>
+                        <img src="download.png">
+                    </td>
+                    <td>
+                        <input id="tot" type="radio" name="win3" value="tot">
+                        <label for="tot">Tottenham FC</label>
+                        <img src="profile_vrt_raw_bytes_1587515401_10891.jpg">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        
+                        <input id="west" type="radio" name="win4" value="west">
+                        <label for="west">WestHam United</label>
+                        <img src="180px-West_Ham_United_FC_logo.svg.png">                       
+                    </td>
+                    <td>
+                        <input id="wolv" type="radio" name="win4" value="wolv">
+                        <label for="wolv">Wolverhampton</label>
+                        <img src="180px-Wolverhampton_Wanderers.svg.png">                        
+                    </td> 
+                </tr>
+                <tr class="fi">
+                    <td>                        
+                            <input type="submit">
+                            <input type="reset">
+                    </td>
+                    <td></td>
+                
+                </tr>
+            </form>
             </tbody>
-        </table>
-    </body>
+        </table>  
 
+     <!--SEPERATOR--> <br> <br>
+
+     <table>
+        <caption>Tomorrow's Matches</caption>
+        <tbody>
+            <tr>
+                <td class="x">Who Wins?</td> 
+                <td class="x"></td> 
+            </tr>
+            <form method="get" >
+            <tr>
+                <td class="host">The Hosted Team</td>
+                <td class="host">The Hosting Team</td>
+            </tr>
+            <tr> 
+                <td>
+                    
+                    <input id="sou" type="radio" name="win5" value="sou">
+                    <label for="sou">Southampton FC</label>
+                    <img src="640px-FC_Southampton.svg.png">                       
+                </td>
+                <td>
+                    <input id="as" type="radio" name="win5" value="as">
+                    <label for="as">Aston Villa</label>
+                    <img src="1200px-Aston_Villa_FC_crest_(2016).svg.png">                        
+                </td> 
+            </tr>
+            <tr>  
+                <td>
+                    
+                    <input id="cry" type="radio" name="win6" value="cry">
+                    <label for="cry">Crystal Palace</label>
+                    <img src="1200px-Crystal_Palace_FC_logo.svg.png">                       
+                </td>
+                <td>
+                    <input id="sto" type="radio" name="win6" value="sto">
+                    <label for="sto">Stoke City</label>
+                    <img src="1200px-Stoke_City_FC.svg.png">                        
+                </td> 
+            </tr>
+            <tr>  
+                <td>
+                    
+                    <input id="ars" type="radio" name="win7" value="ars">
+                    <label for="ars">Arsenal FC</label>
+                    <img src="Arsenal_FC.svg">                       
+                </td>
+                <td>
+                    <input id="bur" type="radio" name="win7" value="bur">
+                    <label for="bur">Burnley FC</label>
+                    <img src="download.jpg">                        
+                </td> 
+            </tr>
+            <tr>  
+                <td>
+                    
+                    <input id="lis" type="radio" name="win8" value="lis">
+                    <label for="lis">Leicester City</label>
+                    <img src="Leicester_City_crest.png">                       
+                </td>
+                <td>
+                    <input id="new" type="radio" name="win8" value="new">
+                    <label for="new">Newcastle United</label>
+                    <img src="Newcastle_United_Logo.svg.png">                        
+                </td> 
+            </tr>
+            <tr class="fi">
+                <td>                        
+                        <input type="submit">
+                        <input type="reset">
+                </td>
+                <td></td>
+            
+            </tr>
+        </form>
+        </tbody>
+     </table>
+        
+    </body>
 </html>

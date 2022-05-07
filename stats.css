@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: -webkit-center;
+}
+table{
+    width:70% ;
+    border-spacing: 0px;            
+}
+table td{
+    padding: 15px; 
+    background-color: #eee;
+    text-align:center ; 
+    }
+table th{
+    text-align: center; 
+    background-color: #3f1052;
+    font-weight: bold; 
+    color: rgb(246, 246, 248); 
+}
