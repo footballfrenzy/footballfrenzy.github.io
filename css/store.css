@@ -478,6 +478,7 @@ h4{
   cursor: pointer;
   width: fit-content;
   font-size: 17px;
+  margin-left: 100px;
 }
 @media (max-width: 767px) {
   .sectiontn {
@@ -514,6 +515,7 @@ h4{
   border: 1px solid white;
   border-radius: 15px;
   z-index: 1;
+  margin-left: 100px;   
 }
 .section-content a {
   color: black;
