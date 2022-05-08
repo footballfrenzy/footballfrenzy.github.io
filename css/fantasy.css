@@ -307,7 +307,7 @@ display: block;
   font-size: 20px;
 }
 .show {
-  position: fixed;
+  position: absolute;
   bottom: 225px;
   left: 673px;
 }
