@@ -470,7 +470,7 @@ h4{
 /* End Footer */
 .sectiontn {
   margin-top: 30%;
-  background-color:#6d3b81;
+  background-color:#4a0a63;
   border-radius: 20px;
   color: white;
   padding: 13px;
@@ -478,7 +478,7 @@ h4{
   cursor: pointer;
   width: fit-content;
   font-size: 17px;
-  margin-left: 10%;
+  margin-left: 100px;
 }
 @media (max-width: 767px) {
   .sectiontn {
