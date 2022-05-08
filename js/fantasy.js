@@ -16,3 +16,16 @@ function myFunction() {
       }
     }
   }
+var myButton = document.getElementById('my-button'),
+    myInput = document.getElementById('my-input');
+
+myButton.onclick = function () {
+  'use strict';
+  if(this.textContent === 'show') {
+    myInput.setAttribute('type', 'text');
+    this.textContent ='hide';
+  } else {
+    myInput.setAttribute('type', 'password');
+    this.textContent ='show';
+  }
+};
