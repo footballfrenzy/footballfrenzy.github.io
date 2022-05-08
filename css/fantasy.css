@@ -306,6 +306,11 @@ display: block;
   left: 30.32rem;
   font-size: 20px;
 }
+.show {
+  position: fixed;
+  bottom: 225px;
+  left: 673px;
+}
 .clicklogin {
   width: 14.5rem;
   height: 2.6rem;
