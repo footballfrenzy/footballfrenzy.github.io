@@ -98,6 +98,19 @@
       </div>
     </div>
     <!-- End Header -->
+         <ul>
+        <li>
+         <div class="section">
+          <button onclick="myFunction1()" class="sectiontn">Sections</button>
+          <div id="mysection" class="section-content">
+            <input type="text" placeholder="Sections.." id="myInput" onkeyup="filterFunction1()">
+            <a href="#stars">Stars</a>
+            <a href="#t-shirt">T-Shirts</a>
+            <a href="#jacket">Jackets</a>
+          </div>
+        </div>  
+        </li>
+         </ul>
     <div class="background">
         <div class="row">
             <div class="col-2">
@@ -397,6 +410,26 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 // button up  
+</script>
+        <script>
+function myFunction1() {
+  document.getElementById("mysection").classList.toggle("show");
+}
+function filterFunction1() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("mysection");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 </script>
     </body>
 </html>
